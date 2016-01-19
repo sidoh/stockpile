@@ -1,0 +1,123 @@
+os.loadAPI("userIo")
+os.loadAPI("tablePersistence")
+os.loadAPI("stockpile/settingsPersistence")
+
+local CACHE_FILE = "stockpile/item_cache.json"
+
+local allItems = {}
+local cache = {}
+local aeInterface = peripheral.wrap("back")
+
+function saveCache()
+  tablePersistence.save(CACHE_FILE, cache)
+end
+
+function loadCache()
+  local loaded = tablePersistence.load(CACHE_FILE)
+
+  if loaded == nil then
+    loaded = { itemDetail = {} }
+  end
+
+  cache = loaded
+end
+
+function getItemDetail(item)
+  local itemKey = settingsPersistence.itemKey(item)
+
+  if cache.itemDetail[itemKey] == nil then
+    local itemDetail = aeInterface.getItemDetail(item).all()
+    cache.itemDetail[itemKey] = { display_name = itemDetail.display_name }
+  end
+
+  return cache.itemDetail[itemKey]
+end
+
+function refreshItems()
+  allItems = aeInterface.getAvailableItems()
+  loadCache()
+
+  for i, item in ipairs(allItems) do
+    if item.is_craftable and item.itemDetails == nil then
+      item.itemDetails = pcall(function() getItemDetail(item.fingerprint) end)
+    end
+  end
+
+  saveCache()
+end
+
+function getAvailableItems()
+  return allItems
+end
+
+function stringMatches(s1,s2)
+  if (s1 ~= s2) and (s1 == nil or s2 == nil) then
+    return false
+  else
+    return string.find(string.lower(s1), string.lower(s2)) ~= nil
+  end
+end
+
+function isSameItem(i1, i2)
+  return i1.id == i2.id and i1.dmg == i2.dmg
+end
+
+function findCraftableItem(itemToFind)
+  for i, item in ipairs(allItems) do
+    item = allItems[i]      
+    if item.is_craftable and isSameItem(item.fingerprint, itemToFind) then
+      return item
+    end
+  end
+
+  return nil
+end
+
+function findCraftableItemByName(itemName)
+  matchingItems = {}
+  
+  for i, item in ipairs(allItems) do
+    local item = allItems[i]      
+    local itemDetail = cache.itemDetail[settingsPersistence.itemKey(item.fingerprint)]
+
+    if item.is_craftable and itemDetail ~= nil and stringMatches(itemDetail.display_name, itemName) then
+      table.insert(matchingItems, item)
+    end
+  end
+  
+  return matchingItems
+end
+
+function chooseCraftableItem()
+  print("Type the name of an item")
+  io.write("> ")
+  local item = io.read()
+  results = findCraftableItemByName(item)
+
+  if table.getn(results) > 0 then
+    local options = {}
+    for i, item in ipairs(results) do
+      local itemDetail = getItemDetail(item.fingerprint)
+      local itemName = item.id
+
+      if itemDetail ~= nil then
+        itemName = itemDetail.display_name
+      end
+
+      table.insert(options, itemName)
+      --io.write(string.format("%d. %s\n", i, itemName))
+    end
+    userIo.printOptions(options)
+
+    print("Which did you mean? (0 to cancel)")
+    local i = userIo.promptForNumberInRange(0, table.getn(results))
+    
+    if i > 0 then
+      return results[i].fingerprint
+    else
+      return nil
+    end
+  else
+    return nil
+  end
+end

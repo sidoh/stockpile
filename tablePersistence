@@ -1,0 +1,18 @@
+function load(file)
+  local loaded = nil
+
+  if fs.exists(file) then
+    local fh = fs.open(file, "r")
+    local s = fh.readAll()
+    loaded = textutils.unserialize(s)
+    fh.close()
+  end
+
+  return loaded
+end
+
+function save(file, value)
+  local fh = fs.open(file, "w")
+  fh.write(textutils.serialize(value))
+  fh.close()
+end

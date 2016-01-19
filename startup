@@ -1,0 +1,102 @@
+os.loadAPI("stockpile/settingsPersistence")
+os.loadAPI("stockpile/craftingRequester")
+os.loadAPI("stockpile/itemSearcher")
+os.loadAPI("userIo")
+
+function handleSetThreshold()
+  itemSearcher.refreshItems()
+  local item = itemSearcher.chooseCraftableItem()
+
+  if item ~= nil then
+    local currentThreshold = settingsPersistence.getItemThreshold(item)
+
+    print("Enter the number of items to keep stocked")
+    if currentThreshold ~= nil then
+      print("(Currently set to: " .. currentThreshold ..")")
+    end
+    local threshold = userIo.promptForNumberInRange(1, math.huge)
+
+    settingsPersistence.setItemThreshold(item, threshold)
+
+    print("Successfully set threshold.")
+  else
+    print("Couldn't find a matching item.")
+  end
+end
+
+function handleRemoveItem()
+  itemSearcher.refreshItems()
+  local stockedItems = getStockedItems() 
+  viewStockedItems("Which item do you want to remove?")
+
+  print("Item number to remove? (0 to cancel)")
+  local itemNum = userIo.promptForNumberInRange(0, table.getn(stockedItems))
+
+  if itemNum == 0 then
+    print("Skipping removal.")
+  elseif itemNum ~= nil then
+    settingsPersistence.removeStockedItem(stockedItems[itemNum].stockedItem.item)
+    print("Successfully removed stocked item.")
+  else
+    print("Couldn't find a matching item.")
+  end
+end
+
+function viewStockedItems(banner)
+  local printableItems = {}
+  for i, item in ipairs(getStockedItems()) do
+    table.insert(printableItems, item.itemDetailStr)
+  end
+    
+  userIo.printOptions(printableItems, banner)
+end
+
+function getStockedItems()
+  local items = {}
+  for key, stockedItem in pairs(settingsPersistence.getStockedItems()) do
+    local itemName = stockedItem.id
+    local itemDetail = itemSearcher.getItemDetail(stockedItem.item)
+
+    if itemDetail ~= nil then
+      itemName = itemDetail.display_name
+    end
+
+    table.insert(items, {
+      itemDetailStr = string.format("%s (%d)", itemName, stockedItem.threshold),
+      stockedItem = stockedItem
+    })
+  end
+
+  table.sort(items, function(a, b) return a.itemDetailStr < b.itemDetailStr end)
+  return items
+end
+
+function main()
+  options = {
+    {
+      name = "Set threshold for an item",
+      handler = handleSetThreshold
+    },
+    {
+      name = "Remove item from stock monitoring",
+      handler = handleRemoveItem
+    },
+    {
+      name = "View stocked items",
+      handler = function() viewStockedItems("") end
+    }
+  }
+
+  while true do
+    settingsPersistence.load()
+
+    print()
+    print()
+
+    print("What do you want to do?")
+    local selection = userIo.chooseOption(options)
+    selection.handler()
+  end
+end
+
+parallel.waitForAll(main, craftingRequester.monitorStockedItems, craftingRequester.monitorFinishedCraftingJobs)

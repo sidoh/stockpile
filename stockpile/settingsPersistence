@@ -1,0 +1,93 @@
+os.loadAPI("tablePersistence")
+
+settings = nil
+local SETTINGS_FILE = "stockpile/stockpile.json"
+
+function load()
+  local loaded = tablePersistence.load(SETTINGS_FILE)
+
+  if loaded == nil then
+    loaded = { stockedItems = {} }
+  end
+
+  settings = loaded
+end
+
+function save()
+  tablePersistence.save(SETTINGS_FILE, settings)
+end
+
+function getStockedItems()
+if settings == nil then
+  print("settings is nil")
+end
+  return settings.stockedItems
+end
+
+function removeStockedItem(item)
+  settings.stockedItems[itemKey(item)] = nil
+  save()
+end
+
+function setItemThreshold(item, threshold)
+  local currentSettings = itemSettings(item)
+  if currentSettings == nil then
+    settings.stockedItems[itemKey(item)] = { 
+      item = item,
+      threshold = threshold 
+    }
+  else
+    currentSettings.threshold = threshold
+  end
+
+  save()
+end
+
+function getItemThreshold(item)
+  local item = itemSettings(item)
+
+  if item ~= nil then
+    return item.threshold
+  else
+    return nil
+  end
+end
+
+function itemIsStocked(item)
+  return itemSettings(item) ~= nil
+end
+
+function itemSettings(item)
+  return getSettings().stockedItems[itemKey(item)]
+end
+
+function itemFromKey(key)
+  local parts = split(key, "/")
+  return { id = parts[1], dmg = parts[2] }
+end
+
+function itemKey(item)
+  local key = item.id .. "/" .. item.dmg
+
+  if item.nbt_hash ~= nil then
+    key = key .. "/" .. item.nbt_hash
+  end
+
+  return key
+end
+
+function split(str, sep)
+   local result = {}
+   local regex = ("([^%s]+)"):format(sep)
+   for each in str:gmatch(regex) do
+      table.insert(result, each)
+   end
+   return result
+end
+
+function getSettings()
+  if settings == nil then
+    load()
+  end
+  return settings
+end

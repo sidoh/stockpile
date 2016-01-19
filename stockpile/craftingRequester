@@ -1,0 +1,63 @@
+os.loadAPI("stockpile/settingsPersistence")
+os.loadAPI("stockpile/itemSearcher")
+
+local aeInterface = peripheral.wrap("back")
+local STOCK_PERCENTAGE = 0.05
+local activeCraftingJobs = {}
+
+function requestCrafting(item, number)
+  aeInterface.requestCrafting(item, number)
+end
+
+function numItemsToStock(stockedItem, craftableItem)
+  local numStocked = craftableItem.size
+  local numWanted = stockedItem.threshold
+
+  if numStocked >= numWanted then
+    return 0
+  else
+    local targetCount = math.ceil(numWanted * (1+STOCK_PERCENTAGE))
+    
+    return targetCount - numStocked
+  end
+end
+
+function monitorStockedItems()
+  while true do
+    settingsPersistence.load()
+    stockedItems = settingsPersistence.getStockedItems()
+    itemSearcher.refreshItems()
+
+    for key, stockedItem in pairs(stockedItems) do
+      local craftableItem = itemSearcher.findCraftableItem(stockedItem.item)
+
+      if craftableItem ~= nil then
+        local stockCount = numItemsToStock(stockedItem, craftableItem) 
+
+        if stockCount > 0 and activeCraftingJobs[key] == nil then
+          log("Requesting " .. stockCount .. " " .. key)
+
+          activeCraftingJobs[key] = true
+          aeInterface.requestCrafting(stockedItem.item, stockCount)
+        end
+      else
+        log("ERROR: monitored item couldn't be found: " .. key)
+      end
+    end
+
+    sleep(10)
+  end
+end
+
+function monitorFinishedCraftingJobs()
+  while true do 
+    local e, craftedItem, eventType = os.pullEvent("crafting_state")
+    local itemKey = settingsPersistence.itemKey(craftedItem.fingerprint)
+
+    log("Crafting job for " .. itemKey .. " finished")
+    activeCraftingJobs[itemKey] = nil
+  end
+end
+
+function log(msg)
+end

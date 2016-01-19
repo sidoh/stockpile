@@ -1,0 +1,2092 @@
+{
+  itemDetail = {
+    [ "ThermalFoundation:material/106" ] = {
+      display_name = "Signalum Nugget",
+    },
+    [ "ThermalExpansion:Strongbox/2" ] = {
+      display_name = "Hardened Strongbox",
+    },
+    [ "IC2:itemPlates/1" ] = {
+      display_name = "Tin Plate",
+    },
+    [ "ThermalExpansion:Frame/9" ] = {
+      display_name = "Resonant Energy Cell Frame (Full)",
+    },
+    [ "IC2:itemArmorQuantumBoots/26" ] = {
+      display_name = "QuantumSuit Boots",
+    },
+    [ "EnderIO:blockIngotStorage/0" ] = {
+      display_name = "Electrical Steel Block",
+    },
+    [ "minecraft:hopper/0" ] = {
+      display_name = "Hopper",
+    },
+    [ "MineFactoryReloaded:road/1" ] = {
+      display_name = "Road Light",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/340" ] = {
+      display_name = "ME Pattern Terminal",
+    },
+    [ "Thaumcraft:ItemResource/16" ] = {
+      display_name = "Void metal Ingot",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/360" ] = {
+      display_name = "ME Crafting Terminal",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/380" ] = {
+      display_name = "ME Terminal",
+    },
+    [ "LogisticsPipes:item.itemModule/207" ] = {
+      display_name = "Advanced Extractor MK3",
+    },
+    [ "minecraft:sticky_piston/0" ] = {
+      display_name = "Sticky Piston",
+    },
+    [ "ExtraUtilities:magnumTorch/0" ] = {
+      display_name = "Magnum Torch",
+    },
+    [ "IC2:itemBatREDischarged/0" ] = {
+      display_name = "RE-Battery",
+    },
+    [ "AWWayofTime:incendium/0" ] = {
+      display_name = "Incendium",
+    },
+    [ "ThermalExpansion:Tank/2" ] = {
+      display_name = "Hardened Portable Tank",
+    },
+    [ "minecraft:fermented_spider_eye/0" ] = {
+      display_name = "Fermented Spider Eye",
+    },
+    [ "LogisticsPipes:item.itemModule/0" ] = {
+      display_name = "Blank Module",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/140" ] = {
+      display_name = "Quartz Fiber",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/180" ] = {
+      display_name = "Illuminated Panel",
+    },
+    [ "minecraft:gold_ingot/0" ] = {
+      display_name = "Gold Ingot",
+    },
+    [ "rftools:timerBlock/0" ] = {
+      display_name = "Timer",
+    },
+    [ "WR-CBE|Core:wirelessTransceiver/0" ] = {
+      display_name = "Wireless Transceiver",
+    },
+    [ "IronChest:BlockIronChest/1" ] = {
+      display_name = "Gold Chest",
+    },
+    [ "IC2:itemCable/3" ] = {
+      display_name = "Insulated Gold Cable",
+    },
+    [ "AWWayofTime:simpleCatalyst/0" ] = {
+      display_name = "Simple Catalyst",
+    },
+    [ "IC2:itemCable/13" ] = {
+      display_name = "Insulated Tin Cable",
+    },
+    [ "EnderIO:blockAlloySmelter/0" ] = {
+      display_name = "Alloy Smelter",
+    },
+    [ "WR-CBE|Core:retherPearl/0" ] = {
+      display_name = "REther Pearl",
+    },
+    [ "IC2:blockMachine2/0" ] = {
+      display_name = "Teleporter",
+    },
+    [ "SolarExpansion:solarPanelHardened/0" ] = {
+      display_name = "Hardened Solar Panel",
+    },
+    [ "harvestcraft:bakewareItem/0" ] = {
+      display_name = "Bakeware",
+    },
+    [ "OpenBlocks:beartrap/0" ] = {
+      display_name = "Bear Trap",
+    },
+    [ "IC2:reactorVent/1" ] = {
+      display_name = "Heat Vent",
+    },
+    [ "StevesCarts:ModuleComponents/49" ] = {
+      display_name = "Enhanced Galgadorian Metal",
+    },
+    [ "IC2:itemAdvBat/26" ] = {
+      display_name = "Advanced RE-Battery",
+    },
+    [ "LogisticsPipes:item.itemModule/2" ] = {
+      display_name = "Passive Supplier module",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingStorage/0" ] = {
+      display_name = "1k Crafting Storage",
+    },
+    [ "IC2:itemCable/0" ] = {
+      display_name = "Insulated Copper Cable",
+    },
+    [ "ThaumicTinkerer:kamiResource/1" ] = {
+      display_name = "Ichorcloth",
+    },
+    [ "Thaumcraft:ItemResource/7" ] = {
+      display_name = "Enchanted Fabric",
+    },
+    [ "ThermalFoundation:material/103" ] = {
+      display_name = "Electrum Nugget",
+    },
+    [ "AWWayofTime:AlchemicalWizardrybloodRune/0" ] = {
+      display_name = "Blood Rune",
+    },
+    [ "ThermalExpansion:Light/0/148c2e9fe24c1de4c97b31af5893b8cb" ] = {
+      display_name = "Glowstone Illuminator",
+    },
+    [ "DraconicEvolution:draconicCore/0" ] = {
+      display_name = "Draconic Core",
+    },
+    [ "IC2:itemCasing/1" ] = {
+      display_name = "Tin Item Casing",
+    },
+    [ "TConstruct:heartCanister/0" ] = {
+      display_name = "Empty Canister",
+    },
+    [ "DraconicEvolution:draconiumFluxCapacitor/0" ] = {
+      display_name = "Wyvern Flux Capacitor",
+    },
+    [ "ExtraUtilities:extractor_base/6" ] = {
+      display_name = "Transfer Node (Liquids)",
+    },
+    [ "Thaumcraft:blockCosmeticOpaque/2" ] = {
+      display_name = "Warded Glass",
+    },
+    [ "ThermalExpansion:Tesseract/0/ba0bb64c195859bfc75a8dd03d2b39f6" ] = {
+      display_name = "Tesseract",
+    },
+    [ "IC2:itemPlates/2" ] = {
+      display_name = "Bronze Plate",
+    },
+    [ "witchery:arthana/0" ] = {
+      display_name = "Arthana",
+    },
+    [ "IC2:blockMachine/12" ] = {
+      display_name = "Advanced Machine Casing",
+    },
+    [ "minecraft:sandstone/2" ] = {
+      display_name = "Smooth Sandstone",
+    },
+    [ "BigReactors:BRTurbinePart/2" ] = {
+      display_name = "Turbine Power Port",
+    },
+    [ "TConstruct:diamondApple/0" ] = {
+      display_name = "Jeweled Apple",
+    },
+    [ "IC2:itemDust2/1" ] = {
+      display_name = "Diamond Dust",
+    },
+    [ "minecraft:stone/0" ] = {
+      display_name = "Stone",
+    },
+    [ "EnderStorage:enderChest/0" ] = {
+      display_name = "Ender Chest",
+    },
+    [ "appliedenergistics2:item.ItemCrystalSeed/0/5af0f90bcc279578cf09089f43278d57" ] = {
+      display_name = "Certus Quartz Seed",
+    },
+    [ "Botania:manaResource/1" ] = {
+      display_name = "Mana Pearl",
+    },
+    [ "AWWayofTime:daggerOfSacrifice/0" ] = {
+      display_name = "Dagger of Sacrifice",
+    },
+    [ "Avaritia:Double_Craft/0" ] = {
+      display_name = "Compressed Crafting Table",
+    },
+    [ "IC2:itemCasing/2" ] = {
+      display_name = "Bronze Item Casing",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/400" ] = {
+      display_name = "ME Storage Monitor",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/460" ] = {
+      display_name = "P2P Tunnel - ME",
+    },
+    [ "AWWayofTime:blockAlchemicCalcinator/0" ] = {
+      display_name = "Alchemic Calcinator",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/480" ] = {
+      display_name = "ME Interface Terminal",
+    },
+    [ "minecraft:bucket/0" ] = {
+      display_name = "Bucket",
+    },
+    [ "AWWayofTime:bloodMagicBaseAlchemyItems/4" ] = {
+      display_name = "Concentrated Catalyst",
+    },
+    [ "minecraft:light_weighted_pressure_plate/0" ] = {
+      display_name = "Weighted Pressure Plate (Light)",
+    },
+    [ "IC2:itemDust2/2" ] = {
+      display_name = "Energium Dust",
+    },
+    [ "IC2:blockElectric/4" ] = {
+      display_name = "MV-Transformer",
+    },
+    [ "Forestry:alveary/4" ] = {
+      display_name = "Alveary Heater",
+    },
+    [ "ExtraUtilities:drum/1" ] = {
+      display_name = "Bedrockium Drum",
+    },
+    [ "ThermalDynamics:ThermalDynamics_0/6" ] = {
+      display_name = "Cryo-Stabilized Fluxduct",
+    },
+    [ "AWWayofTime:imbuedSlate/0" ] = {
+      display_name = "Imbued Slate",
+    },
+    [ "AdvancedSolarPanel:BlockAdvSolarPanel/3" ] = {
+      display_name = "Quantum Solar Panel",
+    },
+    [ "MineFactoryReloaded:machine.0/7" ] = {
+      display_name = "Block Breaker",
+    },
+    [ "MineFactoryReloaded:machine.0/2" ] = {
+      display_name = "Harvester",
+    },
+    [ "minecraft:enchanting_table/0" ] = {
+      display_name = "Enchantment Table",
+    },
+    [ "minecraft:redstone_torch/0" ] = {
+      display_name = "Redstone Torch",
+    },
+    [ "IC2:itemArmorQuantumHelmet/26" ] = {
+      display_name = "QuantumSuit Helmet",
+    },
+    [ "IC2:blockGenerator/0" ] = {
+      display_name = "Generator",
+    },
+    [ "BuildCraft|Factory:miningWellBlock/0" ] = {
+      display_name = "Mining Well",
+    },
+    [ "ComputerCraft:CC-Peripheral/4" ] = {
+      display_name = "Advanced Monitor",
+    },
+    [ "MineFactoryReloaded:machine.0/0" ] = {
+      display_name = "Planter",
+    },
+    [ "ExtraUtilities:etherealglass/0" ] = {
+      display_name = "Ethereal Glass",
+    },
+    [ "MineFactoryReloaded:laserfocus/4" ] = {
+      display_name = "Laser Focus (Yellow)",
+    },
+    [ "IC2:blockLuminatorDark/0" ] = {
+      display_name = "Luminator",
+    },
+    [ "minecraft:piston/0" ] = {
+      display_name = "Piston",
+    },
+    [ "IC2:itemBatLamaCrystal/26" ] = {
+      display_name = "Lapotron Crystal",
+    },
+    [ "minecraft:fishing_rod/0" ] = {
+      display_name = "Fishing Rod",
+    },
+    [ "Botania:rune/9" ] = {
+      display_name = "Rune of Lust",
+    },
+    [ "minecraft:lever/0" ] = {
+      display_name = "Lever",
+    },
+    [ "IC2:blockElectric/5" ] = {
+      display_name = "HV-Transformer",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/29" ] = {
+      display_name = "Fuzzy Card",
+    },
+    [ "MineFactoryReloaded:machine.1/5" ] = {
+      display_name = "Lava Fabricator",
+    },
+    [ "BigReactors:BRMultiblockGlass/1" ] = {
+      display_name = "Turbine Glass",
+    },
+    [ "appliedenergistics2:item.ItemBasicStorageCell.16k/0" ] = {
+      display_name = "16k ME Storage Cell",
+    },
+    [ "ThermalExpansion:material/1" ] = {
+      display_name = "Redstone Reception Coil",
+    },
+    [ "IC2:itemPartCarbonPlate/0" ] = {
+      display_name = "Carbon Plate",
+    },
+    [ "ComputerCraft:CC-Computer/0" ] = {
+      display_name = "Computer",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/41" ] = {
+      display_name = "Wireless Receiver",
+    },
+    [ "minecraft:planks/0" ] = {
+      display_name = "Oak Wood Planks",
+    },
+    [ "minecraft:blaze_powder/0" ] = {
+      display_name = "Blaze Powder",
+    },
+    [ "StevesFactoryManager:BlockCableBreakerName/0" ] = {
+      display_name = "Block Gate",
+    },
+    [ "ThermalExpansion:capacitor/3" ] = {
+      display_name = "Hardened Flux Capacitor",
+    },
+    [ "minecraft:iron_shovel/0" ] = {
+      display_name = "Iron Shovel",
+    },
+    [ "minecraft:flower_pot/0" ] = {
+      display_name = "Flower Pot",
+    },
+    [ "minecraft:gold_nugget/0" ] = {
+      display_name = "Gold Nugget",
+    },
+    [ "Forestry:beeswax/0" ] = {
+      display_name = "Beeswax",
+    },
+    [ "EnderIO:item.darkSteel_pickaxe/0" ] = {
+      display_name = "Dark Pick",
+    },
+    [ "ExtraUtilities:endConstructor/2" ] = {
+      display_name = "Ender-Flux Crystal",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/0" ] = {
+      display_name = "Redstone Chipset",
+    },
+    [ "ThermalDynamics:ThermalDynamics_16/2" ] = {
+      display_name = "Hardened Fluiduct",
+    },
+    [ "IC2:blockElectric/2" ] = {
+      display_name = "MFSU",
+    },
+    [ "BigReactors:BRMetalBlock/2" ] = {
+      display_name = "Graphite Block",
+    },
+    [ "StevesFactoryManager:BlockCableIntakeName/8" ] = {
+      display_name = "Rapid Item Valve",
+    },
+    [ "IC2:itemIngot/4" ] = {
+      display_name = "Mixed Metal Ingot",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingStorage/3" ] = {
+      display_name = "64k Crafting Storage",
+    },
+    [ "ThermalExpansion:Frame/10" ] = {
+      display_name = "Tesseract Frame (Empty)",
+    },
+    [ "EnderIO:itemMaterial/6" ] = {
+      display_name = "Vibrant Crystal",
+    },
+    [ "appliedenergistics2:item.ToolWirelessTerminal/0" ] = {
+      display_name = "Wireless Terminal",
+    },
+    [ "ComputerCraft:CC-Peripheral/1" ] = {
+      display_name = "Wireless Modem",
+    },
+    [ "Genetics:misc/6" ] = {
+      display_name = "Empty Serum Vial",
+    },
+    [ "DraconicEvolution:awakenedCore/0" ] = {
+      display_name = "Awakened Core",
+    },
+    [ "AWWayofTime:itemAttunedCrystal/0" ] = {
+      display_name = "Alchemic Router",
+    },
+    [ "extracells:pattern.fluid/0" ] = {
+      display_name = "ME Fluid Pattern [WIP]",
+    },
+    [ "minecraft:carpet/0" ] = {
+      display_name = "Carpet",
+    },
+    [ "gendustry:GeneticsProcessor/32767" ] = {
+      display_name = "Genetics Processor",
+    },
+    [ "IC2:blockAlloyGlass/0" ] = {
+      display_name = "Reinforced Glass",
+    },
+    [ "Botania:manaResource/18" ] = {
+      display_name = "Terrasteel Nugget",
+    },
+    [ "Botania:manaResource/14" ] = {
+      display_name = "Gaia Spirit Ingot",
+    },
+    [ "IC2:itemArmorNanoBoots/26" ] = {
+      display_name = "NanoSuit Boots",
+    },
+    [ "Botania:manaResource/2" ] = {
+      display_name = "Mana Diamond",
+    },
+    [ "MineFactoryReloaded:stainedglass.block/4" ] = {
+      display_name = "Stained Glass (Yellow)",
+    },
+    [ "SolarExpansion:solarPanelUltimate/0" ] = {
+      display_name = "Ultimate Solar Panel",
+    },
+    [ "TConstruct:CraftedSoil/1" ] = {
+      display_name = "Grout",
+    },
+    [ "Railcraft:brick.bloodstained/2" ] = {
+      display_name = "Blood Stained Block",
+    },
+    [ "EnderIO:itemBasicCapacitor/0" ] = {
+      display_name = "Basic Capacitor",
+    },
+    [ "Genetics:misc/9" ] = {
+      display_name = "Integrated Circuit Board",
+    },
+    [ "ExtraUtilities:cobblestone_compressed/1" ] = {
+      display_name = "Double Compressed Cobblestone",
+    },
+    [ "MineFactoryReloaded:machine.1/3" ] = {
+      display_name = "Deep Storage Unit",
+    },
+    [ "Botania:rune/11" ] = {
+      display_name = "Rune of Greed",
+    },
+    [ "minecraft:cake/0" ] = {
+      display_name = "Cake",
+    },
+    [ "IC2:itemCable/5" ] = {
+      display_name = "HV Cable",
+    },
+    [ "AWWayofTime:bloodMagicBaseItems/27" ] = {
+      display_name = "Ethereal Slate",
+    },
+    [ "IC2:itemCable/6" ] = {
+      display_name = "Insulated HV Cable",
+    },
+    [ "BigReactors:BRReactorPart/0" ] = {
+      display_name = "Reactor Casing",
+    },
+    [ "minecraft:water_bucket/0" ] = {
+      display_name = "Water Bucket",
+    },
+    [ "extracells:storage.component/2" ] = {
+      display_name = "4096k ME Storage Component",
+    },
+    [ "minecraft:magma_cream/0" ] = {
+      display_name = "Magma Cream",
+    },
+    [ "BuildCraft|Core:diamondGearItem/0" ] = {
+      display_name = "Diamond Gear",
+    },
+    [ "ThermalFoundation:material/514" ] = {
+      display_name = "Aerotheum Dust",
+    },
+    [ "ThermalDynamics:ThermalDynamics_0/3" ] = {
+      display_name = "Redstone Energy Fluxduct (Empty)",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/2" ] = {
+      display_name = "Golden Chipset",
+    },
+    [ "BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz/0" ] = {
+      display_name = "Quartz Transport Pipe",
+    },
+    [ "Botania:pylon/0" ] = {
+      display_name = "Mana Pylon",
+    },
+    [ "appliedenergistics2:tile.BlockDrive/0" ] = {
+      display_name = "ME Drive",
+    },
+    [ "Thaumcraft:ItemResource/14" ] = {
+      display_name = "Salis Mundus",
+    },
+    [ "ImmersiveEngineering:metalDevice/6" ] = {
+      display_name = "HV Wire Connector",
+    },
+    [ "minecraft:glass_bottle/0" ] = {
+      display_name = "Glass Bottle",
+    },
+    [ "StevesFactoryManager:BlockCableName/0" ] = {
+      display_name = "Inventory Cable",
+    },
+    [ "minecraft:golden_carrot/0" ] = {
+      display_name = "Golden Carrot",
+    },
+    [ "gendustry:ApiaryUpgrade/6" ] = {
+      display_name = "Heater Upgrade",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/44" ] = {
+      display_name = "ME Smart Cable - Yellow",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/50" ] = {
+      display_name = "ME Smart Cable - Purple",
+    },
+    [ "AWWayofTime:blankSlate/0" ] = {
+      display_name = "Blank Slate",
+    },
+    [ "AWWayofTime:speedRune/0" ] = {
+      display_name = "Speed Rune",
+    },
+    [ "ComputerCraft:CC-Computer/16384" ] = {
+      display_name = "Advanced Computer",
+    },
+    [ "ThaumicTinkerer:ichorclothBoots/0" ] = {
+      display_name = "Ichorcloth Boots",
+    },
+    [ "BigReactors:YelloriumFuelRod/0" ] = {
+      display_name = "Yellorium Fuel Rod",
+    },
+    [ "gendustry:Sampler/0" ] = {
+      display_name = "Genetic Sampler",
+    },
+    [ "minecraft:redstone_block/0" ] = {
+      display_name = "Block of Redstone",
+    },
+    [ "Botania:lens/2" ] = {
+      display_name = "Mana Lens: Potency",
+    },
+    [ "TConstruct:heartCanister/5" ] = {
+      display_name = "Miniature Green Heart",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/54" ] = {
+      display_name = "ME Smart Cable - Red",
+    },
+    [ "Forestry:factory/2" ] = {
+      display_name = "Centrifuge",
+    },
+    [ "DraconicEvolution:draconium/0" ] = {
+      display_name = "Draconium Block",
+    },
+    [ "ThermalExpansion:augment/312" ] = {
+      display_name = "Augment: Accelerated Extrusion",
+    },
+    [ "minecraft:lapis_block/0" ] = {
+      display_name = "Lapis Lazuli Block",
+    },
+    [ "Botania:manaTablet/1000/ab911616682cbb57183a985303546f2a" ] = {
+      display_name = "Mana Tablet",
+    },
+    [ "IC2:upgradeModule/0" ] = {
+      display_name = "Overclocker Upgrade",
+    },
+    [ "IC2:itemCable/2" ] = {
+      display_name = "Gold Cable",
+    },
+    [ "minecraft:stonebrick/0" ] = {
+      display_name = "Stone Bricks",
+    },
+    [ "IC2:itemPartCircuitAdv/0" ] = {
+      display_name = "Advanced Circuit",
+    },
+    [ "ThaumicTinkerer:kamiResource/4" ] = {
+      display_name = "Ichorium Cap",
+    },
+    [ "IC2:reactorReflector/1" ] = {
+      display_name = "Neutron Reflector",
+    },
+    [ "Forestry:factory/6" ] = {
+      display_name = "Still",
+    },
+    [ "appliedenergistics2:item.ItemCrystalSeed/1200/574863d52743aa663aeda73843c07a16" ] = {
+      display_name = "Fluix Seed",
+    },
+    [ "MineFactoryReloaded:machine.2/0" ] = {
+      display_name = "Laser Drill",
+    },
+    [ "Thaumcraft:WandCasting/81/06c70783a111f44b1d321eb08b601b45" ] = {
+      display_name = "Thaumium Bossed Silverwood Scepter",
+    },
+    [ "IC2:blockIronScaffold/0" ] = {
+      display_name = "Iron Scaffold",
+    },
+    [ "ThermalExpansion:capacitor/2" ] = {
+      display_name = "Leadstone Flux Capacitor",
+    },
+    [ "minecraft:iron_bars/0" ] = {
+      display_name = "Iron Bars",
+    },
+    [ "minecraft:stonebrick/3" ] = {
+      display_name = "Chiseled Stone Bricks",
+    },
+    [ "ThermalExpansion:augment/128" ] = {
+      display_name = "Augment: Secondary Reception Coil",
+    },
+    [ "DraconicEvolution:energyPylon/0" ] = {
+      display_name = "Energy Pylon",
+    },
+    [ "IC2:itemCasing/4" ] = {
+      display_name = "Iron Item Casing",
+    },
+    [ "thaumicenergistics:storage.essentia/3" ] = {
+      display_name = "ME 64k Essentia Storage Cell",
+    },
+    [ "IC2:reactorHeatSwitchSpread/1" ] = {
+      display_name = "Component Heat Exchanger",
+    },
+    [ "StevesFactoryManager:BlockCableClusterName/8" ] = {
+      display_name = "Advanced Cable Cluster",
+    },
+    [ "AWWayofTime:itemDestinationClearer/0" ] = {
+      display_name = "Alchemic Cleanser",
+    },
+    [ "ThermalDynamics:ThermalDynamics_16/6" ] = {
+      display_name = "Super-Laminar Fluiduct",
+    },
+    [ "DraconicEvolution:draconicBlock/0" ] = {
+      display_name = "Awakened Draconium Block",
+    },
+    [ "Thaumcraft:ItemResource/2" ] = {
+      display_name = "Thaumium Ingot",
+    },
+    [ "minecraft:crafting_table/0" ] = {
+      display_name = "Crafting Table",
+    },
+    [ "IC2:itemPlates/3" ] = {
+      display_name = "Gold Plate",
+    },
+    [ "BigReactors:BRTurbinePart/0" ] = {
+      display_name = "Turbine Housing",
+    },
+    [ "extracells:storage.physical/0" ] = {
+      display_name = "ME 256k Storage",
+    },
+    [ "minecraft:slime_ball/0" ] = {
+      display_name = "Slimeball",
+    },
+    [ "StevesFactoryManager:BlockCableIntakeName/0" ] = {
+      display_name = "Item Valve",
+    },
+    [ "IC2:itemPlates/0" ] = {
+      display_name = "Copper Plate",
+    },
+    [ "IC2:itemRecipePart/0" ] = {
+      display_name = "Coil",
+    },
+    [ "Genetics:misc/10" ] = {
+      display_name = "Integrated CPU",
+    },
+    [ "IC2:itemPlates/4" ] = {
+      display_name = "Iron Plate",
+    },
+    [ "WR-CBE|Core:stoneBowl/0" ] = {
+      display_name = "Stone Bowl",
+    },
+    [ "IC2:itemDensePlates/6" ] = {
+      display_name = "Dense Lead Plate",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/25" ] = {
+      display_name = "Basic Card",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/35" ] = {
+      display_name = "1k ME Storage Component",
+    },
+    [ "BuildCraft|Factory:floodGateBlock/0" ] = {
+      display_name = "Flood Gate",
+    },
+    [ "ExtraBees:alveary/2" ] = {
+      display_name = "Rain Shield",
+    },
+    [ "minecraft:diamond_shovel/0" ] = {
+      display_name = "Diamond Shovel",
+    },
+    [ "gendustry:ApiaryUpgrade/1" ] = {
+      display_name = "Lifespan Upgrade",
+    },
+    [ "BigReactors:BRTurbinePart/5" ] = {
+      display_name = "Turbine Computer Port",
+    },
+    [ "BigReactors:BRTurbineRotorPart/0" ] = {
+      display_name = "Turbine Rotor Shaft",
+    },
+    [ "thaumicenergistics:storage.component/3" ] = {
+      display_name = "ME 64k Essentia Storage Component",
+    },
+    [ "StevesCarts:ModuleComponents/48" ] = {
+      display_name = "Large Lump of Galgador",
+    },
+    [ "extracells:storage.fluid/2" ] = {
+      display_name = "ME 16k Fluid Storage",
+    },
+    [ "Botania:rune/6" ] = {
+      display_name = "Rune of Autumn",
+    },
+    [ "ThermalExpansion:Machine/1/db28802f2b47eb071a3a5041c3bc0684" ] = {
+      display_name = "Pulverizer (Resonant)",
+    },
+    [ "ThermalExpansion:Machine/5/db28802f2b47eb071a3a5041c3bc0684" ] = {
+      display_name = "Fluid Transposer (Resonant)",
+    },
+    [ "Forestry:factory2/0" ] = {
+      display_name = "Thermionic Fabricator",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/1" ] = {
+      display_name = "Iron Chipset",
+    },
+    [ "rftools:enderMonitorBlock/0" ] = {
+      display_name = "Ender Monitor",
+    },
+    [ "AWWayofTime:blockTeleposer/0" ] = {
+      display_name = "Teleposer",
+    },
+    [ "WR-CBE|Core:obsidianStick/0" ] = {
+      display_name = "Obsidian Stick",
+    },
+    [ "IC2:blockMachine/5" ] = {
+      display_name = "Compressor",
+    },
+    [ "TConstruct:materials/2" ] = {
+      display_name = "Seared Brick",
+    },
+    [ "thaumicenergistics:focus.aewrench/0" ] = {
+      display_name = "Wand Focus: AE Wrench",
+    },
+    [ "MineFactoryReloaded:machine.2/1" ] = {
+      display_name = "Laser Drill Precharger",
+    },
+    [ "AWWayofTime:ritualStone/0" ] = {
+      display_name = "Ritual Stone",
+    },
+    [ "ThermalExpansion:material/16" ] = {
+      display_name = "Signalum Security Lock",
+    },
+    [ "EnderIO:itemAlloy/2" ] = {
+      display_name = "Vibrant Alloy",
+    },
+    [ "minecraft:dropper/0" ] = {
+      display_name = "Dropper",
+    },
+    [ "runicdungeons:item.key/2" ] = {
+      display_name = "Dungeon Key",
+    },
+    [ "SolarExpansion:solarPanelResonant/0" ] = {
+      display_name = "Resonant Solar Panel",
+    },
+    [ "Thaumcraft:ItemResource/9" ] = {
+      display_name = "Knowledge Fragment",
+    },
+    [ "ThermalFoundation:material/69" ] = {
+      display_name = "Shiny Ingot",
+    },
+    [ "AWWayofTime:crystallos/0" ] = {
+      display_name = "Crystallos",
+    },
+    [ "minecraft:furnace/0" ] = {
+      display_name = "Furnace",
+    },
+    [ "BigReactors:BRTurbinePart/1" ] = {
+      display_name = "Turbine Controller",
+    },
+    [ "ThermalExpansion:augment/130" ] = {
+      display_name = "Augment: Space-Time Flux Unifier",
+    },
+    [ "appliedenergistics2:tile.BlockInscriber/0" ] = {
+      display_name = "Inscriber",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/6" ] = {
+      display_name = "Iridium-Iron Plate",
+    },
+    [ "minecraft:bow/0" ] = {
+      display_name = "Bow",
+    },
+    [ "gendustry:ApiaryUpgrade/14" ] = {
+      display_name = "Automation Upgrade",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/2" ] = {
+      display_name = "Irradiant Uranium",
+    },
+    [ "IC2:blockMachine/13" ] = {
+      display_name = "Induction Furnace",
+    },
+    [ "minecraft:cobblestone/0" ] = {
+      display_name = "Cobblestone",
+    },
+    [ "IC2:blockMachine/11" ] = {
+      display_name = "Recycler",
+    },
+    [ "IC2:reactorVentGold/1" ] = {
+      display_name = "Overclocked Heat Vent",
+    },
+    [ "ComputerCraft:CC-Cable/1" ] = {
+      display_name = "Wired Modem",
+    },
+    [ "IC2:blockMiningPipe/0" ] = {
+      display_name = "Mining Pipe",
+    },
+    [ "ThermalExpansion:Device/2/c4e95ce00929a663b11d49ce175a5967" ] = {
+      display_name = "Autonomous Activator",
+    },
+    [ "appliedenergistics2:tile.BlockInterface/0" ] = {
+      display_name = "ME Interface",
+    },
+    [ "IC2:blockMachine2/7" ] = {
+      display_name = "Scanner",
+    },
+    [ "ThermalFoundation:material/35" ] = {
+      display_name = "Pulverized Lead",
+    },
+    [ "Botania:prismarine/0" ] = {
+      display_name = "Prismarine",
+    },
+    [ "IC2:itemToolDrill/26" ] = {
+      display_name = "Mining Drill",
+    },
+    [ "ThermalFoundation:material/515" ] = {
+      display_name = "Petrotheum Dust",
+    },
+    [ "IC2:itemRecipePart/4" ] = {
+      display_name = "Crystal Memory (raw)",
+    },
+    [ "MineFactoryReloaded:road/0" ] = {
+      display_name = "Road",
+    },
+    [ "DraconicEvolution:teleporterMKII/0" ] = {
+      display_name = "Enhanced Charm of Dislocation",
+    },
+    [ "Thaumcraft:ItemResource/3" ] = {
+      display_name = "Quicksilver",
+    },
+    [ "OpenBlocks:tank/0" ] = {
+      display_name = "Tank",
+    },
+    [ "MineFactoryReloaded:fertilizer/0" ] = {
+      display_name = "Industrial Fertilizer",
+    },
+    [ "BigReactors:BRReactorPart/2" ] = {
+      display_name = "Reactor Control Rod",
+    },
+    [ "ThermalDynamics:ThermalDynamics_32/0" ] = {
+      display_name = "Itemduct",
+    },
+    [ "minecraft:nether_brick/0" ] = {
+      display_name = "Nether Brick",
+    },
+    [ "StevesFactoryManager:BlockCableClusterName/0" ] = {
+      display_name = "Cable Cluster",
+    },
+    [ "appliedenergistics2:tile.BlockEnergyAcceptor/0" ] = {
+      display_name = "Energy Acceptor",
+    },
+    [ "ThermalExpansion:Machine/9/a566dfba005de42f5bbd0884d978cc18" ] = {
+      display_name = "Cyclic Assembler (Basic)",
+    },
+    [ "Thaumcraft:ItemNugget/0" ] = {
+      display_name = "Iron Nugget",
+    },
+    [ "ThermalFoundation:material/1029" ] = {
+      display_name = "Basalz Powder",
+    },
+    [ "StevesFactoryManager:BlockCableOutputName/0" ] = {
+      display_name = "Redstone Emitter",
+    },
+    [ "WR-CBE|Core:recieverDish/0" ] = {
+      display_name = "Receiver Dish",
+    },
+    [ "minecraft:bowl/0" ] = {
+      display_name = "Bowl",
+    },
+    [ "Botania:manaResource/0" ] = {
+      display_name = "Manasteel Ingot",
+    },
+    [ "LogisticsPipes:item.PipeLogisticsChassiMk3/0" ] = {
+      display_name = "Logistics Chassis Mk3",
+    },
+    [ "minecraft:iron_pickaxe/0" ] = {
+      display_name = "Iron Pickaxe",
+    },
+    [ "EnderTech:endertech.enderTankController/0" ] = {
+      display_name = "Ender Tank Controller",
+    },
+    [ "Botania:blazeBlock/0" ] = {
+      display_name = "Blaze Lamp",
+    },
+    [ "minecraft:cauldron/0" ] = {
+      display_name = "Cauldron",
+    },
+    [ "ThermalExpansion:Machine/8/06f5e9411ca05bd1f857c9bcb5c6016b" ] = {
+      display_name = "Aqueous Accumulator (Resonant)",
+    },
+    [ "MineFactoryReloaded:machineblock/1" ] = {
+      display_name = "Programmable RedNet Controller Housing",
+    },
+    [ "witchery:ingredient/26" ] = {
+      display_name = "Soft Clay Jar",
+    },
+    [ "minecraft:hay_block/0" ] = {
+      display_name = "Hay Bale",
+    },
+    [ "LogisticsPipes:item.itemModule/103" ] = {
+      display_name = "Extractor MK2 module",
+    },
+    [ "MineFactoryReloaded:portaspawner/0" ] = {
+      display_name = "PortaSpawner",
+    },
+    [ "Avaritia:Resource/1" ] = {
+      display_name = "Crystal Matrix Ingot",
+    },
+    [ "extracells:storage.physical/2" ] = {
+      display_name = "ME 4096k Storage",
+    },
+    [ "ThermalExpansion:Tank/3" ] = {
+      display_name = "Reinforced Portable Tank",
+    },
+    [ "minecraft:potion/0" ] = {
+      display_name = "Water Bottle",
+    },
+    [ "IC2:blockGenerator/5" ] = {
+      display_name = "Nuclear Reactor",
+    },
+    [ "minecraft:clock/0" ] = {
+      display_name = "Clock",
+    },
+    [ "AdvancedSolarPanel:BlockAdvSolarPanel/2" ] = {
+      display_name = "Ultimate Hybrid Solar Panel",
+    },
+    [ "Botania:rune/10" ] = {
+      display_name = "Rune of Gluttony",
+    },
+    [ "appliedenergistics2:tile.BlockQuartzGlass/0" ] = {
+      display_name = "Quartz Glass",
+    },
+    [ "SolarExpansion:solarCoreLeadstone/0" ] = {
+      display_name = "Leadstone Solar Core",
+    },
+    [ "EnderIO:itemBasicCapacitor/2" ] = {
+      display_name = "Octadic Capacitor",
+    },
+    [ "IC2:blockElectric/6" ] = {
+      display_name = "EV-Transformer",
+    },
+    [ "AWWayofTime:blockCrystal/0" ] = {
+      display_name = "Crystal Cluster",
+    },
+    [ "IC2:itemRecipePart/2" ] = {
+      display_name = "Power Unit",
+    },
+    [ "rftools:machineFrame/0" ] = {
+      display_name = "Machine Frame",
+    },
+    [ "Genetics:misc/11" ] = {
+      display_name = "Integrated Casing",
+    },
+    [ "Avaritia:Triple_Craft/0" ] = {
+      display_name = "Double Compressed Crafting Table",
+    },
+    [ "rftools:pearlInjectorBlock/0" ] = {
+      display_name = "Pearl Injector",
+    },
+    [ "SolarExpansion:solarPanelRedstone/0" ] = {
+      display_name = "Redstone Solar Panel",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/220" ] = {
+      display_name = "ME Storage Bus",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/240" ] = {
+      display_name = "ME Import Bus",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/260" ] = {
+      display_name = "ME Export Bus",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/280" ] = {
+      display_name = "ME Level Emitter",
+    },
+    [ "IC2:itemArmorNanoChestplate/26" ] = {
+      display_name = "NanoSuit Bodyarmor",
+    },
+    [ "IC2:itemPlates/6" ] = {
+      display_name = "Lead Plate",
+    },
+    [ "WR-CBE|Logic:wirelessLogic/1" ] = {
+      display_name = "Wireless Receiver",
+    },
+    [ "StevesCarts:ModuleComponents/20" ] = {
+      display_name = "Hardened Mesh",
+    },
+    [ "IC2:blockElectric/1" ] = {
+      display_name = "MFE",
+    },
+    [ "minecraft:speckled_melon/0" ] = {
+      display_name = "Glistering Melon",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/51" ] = {
+      display_name = "ME Smart Cable - Blue",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/71" ] = {
+      display_name = "ME Dense Cable - Blue",
+    },
+    [ "StevesCarts:ModuleComponents/18" ] = {
+      display_name = "Raw Hardener",
+    },
+    [ "SolarExpansion:solarCoreUltimate/0" ] = {
+      display_name = "Ultimate Solar Core",
+    },
+    [ "witchery:ingredient/10" ] = {
+      display_name = "Attuned Stone",
+    },
+    [ "gendustry:IndustrialApiary/0" ] = {
+      display_name = "Industrial Apiary",
+    },
+    [ "IC2:blockMachine/14" ] = {
+      display_name = "Mass Fabricator",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/16" ] = {
+      display_name = "ME Glass Cable - Fluix",
+    },
+    [ "minecraft:chest/0" ] = {
+      display_name = "Chest",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/36" ] = {
+      display_name = "ME Covered Cable - Fluix",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/56" ] = {
+      display_name = "ME Smart Cable - Fluix",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/76" ] = {
+      display_name = "ME Dense Cable - Fluix",
+    },
+    [ "minecraft:dispenser/0" ] = {
+      display_name = "Dispenser",
+    },
+    [ "ExtraUtilities:color_blockCoal/15" ] = {
+      display_name = "Colored Block of Coal (Black Frequency)",
+    },
+    [ "ComputerCraft:CC-TurtleAdvanced/0" ] = {
+      display_name = "Advanced Turtle",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/11" ] = {
+      display_name = "Uranium Ingot",
+    },
+    [ "minecraft:diamond_pickaxe/0" ] = {
+      display_name = "Diamond Pickaxe",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingUnit/0" ] = {
+      display_name = "Crafting Unit",
+    },
+    [ "appliedenergistics2:item.ToolCertusQuartzWrench/0" ] = {
+      display_name = "Certus Quartz Wrench",
+    },
+    [ "Botania:rune/1" ] = {
+      display_name = "Rune of Fire",
+    },
+    [ "ThermalExpansion:Frame/4" ] = {
+      display_name = "Leadstone Energy Cell Frame",
+    },
+    [ "SolarExpansion:photovoltaicCell/0" ] = {
+      display_name = "Photovoltaic Cell",
+    },
+    [ "ExtraUtilities:block_bedrockium/0" ] = {
+      display_name = "Block of Bedrockium",
+    },
+    [ "ExtraUtilities:decorativeBlock1/1" ] = {
+      display_name = "Ender-infused Obsidian",
+    },
+    [ "Botania:manaResource/3" ] = {
+      display_name = "Livingwood Twig",
+    },
+    [ "AWWayofTime:masterStone/0" ] = {
+      display_name = "Master Ritual Stone",
+    },
+    [ "ThaumicTinkerer:kamiResource/2" ] = {
+      display_name = "Ichorium",
+    },
+    [ "extracells:storage.component/1" ] = {
+      display_name = "1024k ME Storage Component",
+    },
+    [ "MineFactoryReloaded:rednet.logic/0" ] = {
+      display_name = "Programmable RedNet Controller",
+    },
+    [ "IC2:blockMachine/8" ] = {
+      display_name = "Pump",
+    },
+    [ "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood/0" ] = {
+      display_name = "Wooden Transport Pipe",
+    },
+    [ "Thaumcraft:FocusPrimal/0" ] = {
+      display_name = "Wand Focus: Primal",
+    },
+    [ "StevesFactoryManager:BlockMachineManagerName/0" ] = {
+      display_name = "Machine Inventory Manager",
+    },
+    [ "ThermalFoundation:bucket/1" ] = {
+      display_name = "Energized Glowstone Bucket",
+    },
+    [ "AWWayofTime:telepositionFocus/0" ] = {
+      display_name = "Teleposition Focus",
+    },
+    [ "Forestry:factory/1" ] = {
+      display_name = "Carpenter",
+    },
+    [ "BuildCraft|Builders:fillerBlock/0" ] = {
+      display_name = "Filler",
+    },
+    [ "LogisticsPipes:item.itemModule/3" ] = {
+      display_name = "Extractor module",
+    },
+    [ "IC2:itemPlates/5" ] = {
+      display_name = "Refined Iron Plate",
+    },
+    [ "ThermalDynamics:ThermalDynamics_0/7" ] = {
+      display_name = "Cryo-Stabilized Fluxduct (Empty)",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/27" ] = {
+      display_name = "Capacity Card",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/37" ] = {
+      display_name = "16k ME Storage Component",
+    },
+    [ "Thaumcraft:blockWoodenDevice/7" ] = {
+      display_name = "Silverwood Planks",
+    },
+    [ "ThermalFoundation:tool.axeInvar/0" ] = {
+      display_name = "Invar Axe",
+    },
+    [ "IC2:reactorVentSpread/0" ] = {
+      display_name = "Component Heat Vent",
+    },
+    [ "Botania:lens/0" ] = {
+      display_name = "Mana Lens",
+    },
+    [ "AWWayofTime:blockReagentConduit/0" ] = {
+      display_name = "Alchemy Relay",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/10" ] = {
+      display_name = "Pure Certus Quartz Crystal",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/30" ] = {
+      display_name = "Acceleration Card",
+    },
+    [ "SolarExpansion:solarCoreHardened/0" ] = {
+      display_name = "Hardened Solar Core",
+    },
+    [ "chisel:factoryblock/0" ] = {
+      display_name = "Factory Block",
+    },
+    [ "AWWayofTime:demonicSlate/0" ] = {
+      display_name = "Demonic Slate",
+    },
+    [ "StevesCarts:BlockMetalStorage/2" ] = {
+      display_name = "Enhanced Galgadorian Block",
+    },
+    [ "EnderIO:blockSagMill/0" ] = {
+      display_name = "SAG Mill",
+    },
+    [ "ThermalExpansion:Tank/1" ] = {
+      display_name = "Portable Tank",
+    },
+    [ "IC2:itemPartCarbonFibre/0" ] = {
+      display_name = "Raw Carbon Fibre",
+    },
+    [ "IC2:blockMachine2/6" ] = {
+      display_name = "Pattern Storage",
+    },
+    [ "LogisticsPipes:item.itemModule/203" ] = {
+      display_name = "Extractor MK3 module",
+    },
+    [ "AdvancedSolarPanel:BlockAdvSolarPanel/1" ] = {
+      display_name = "Hybrid Solar Panel",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/4" ] = {
+      display_name = "Pulsating Chipset",
+    },
+    [ "AWWayofTime:aquasalus/0" ] = {
+      display_name = "Aquasalus",
+    },
+    [ "ExtraUtilities:decorativeBlock1/12" ] = {
+      display_name = "Diamond-Etched Computational Matrix",
+    },
+    [ "EnderIO:itemPowderIngot/5" ] = {
+      display_name = "Ender Pearl Powder",
+    },
+    [ "ExtraUtilities:unstableingot/2" ] = {
+      display_name = "Mobius \"Unstable/Stable\" Ingot",
+    },
+    [ "thaumicenergistics:storage.component/0" ] = {
+      display_name = "ME 1k Essentia Storage Component",
+    },
+    [ "appliedenergistics2:item.ItemBasicStorageCell.64k/0" ] = {
+      display_name = "64k ME Storage Cell",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/5" ] = {
+      display_name = "Irradiant Glass Pane",
+    },
+    [ "AdvancedSolarPanel:BlockAdvSolarPanel/0" ] = {
+      display_name = "Advanced Solar Panel",
+    },
+    [ "MineFactoryReloaded:cable.plastic/0" ] = {
+      display_name = "Plastic Pipe",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/7" ] = {
+      display_name = "Emerald Chipset",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/23" ] = {
+      display_name = "Calculation Processor",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/43" ] = {
+      display_name = "Formation Core",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/53" ] = {
+      display_name = "Crafting Card",
+    },
+    [ "extracells:certustank/0" ] = {
+      display_name = "Certus Quartz Tank",
+    },
+    [ "minecraft:quartz_block/0" ] = {
+      display_name = "Block of Quartz",
+    },
+    [ "ThermalExpansion:Tank/4" ] = {
+      display_name = "Resonant Portable Tank",
+    },
+    [ "IC2:blockMachine2/4" ] = {
+      display_name = "Metal Former",
+    },
+    [ "Botania:manaGlass/0" ] = {
+      display_name = "Managlass",
+    },
+    [ "RedstoneArsenal:material/0" ] = {
+      display_name = "Fluxed Electrum Blend",
+    },
+    [ "StevesFactoryManager:BlockCableInputName/0" ] = {
+      display_name = "Redstone Receiver",
+    },
+    [ "BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz/0" ] = {
+      display_name = "Quartz Fluid Pipe",
+    },
+    [ "Forestry:factory/5" ] = {
+      display_name = "Squeezer",
+    },
+    [ "Thaumcraft:ItemNugget/4" ] = {
+      display_name = "Lead Nugget",
+    },
+    [ "ThermalFoundation:material/40" ] = {
+      display_name = "Invar Blend",
+    },
+    [ "StevesCarts:ModuleComponents/46" ] = {
+      display_name = "Lump of Galgador",
+    },
+    [ "gendustry:BeeReceptacle/0" ] = {
+      display_name = "Bee Receptacle",
+    },
+    [ "Avaritia:Dire_Crafting/0" ] = {
+      display_name = "Dire Crafting Table",
+    },
+    [ "StevesCarts:ModuleComponents/22" ] = {
+      display_name = "Reinforced Metal",
+    },
+    [ "IC2:itemArmorQuantumChestplate/26" ] = {
+      display_name = "QuantumSuit Bodyarmor",
+    },
+    [ "Botania:pool/0" ] = {
+      display_name = "Mana Pool",
+    },
+    [ "ThermalExpansion:material/3" ] = {
+      display_name = "Redstone Conductance Coil",
+    },
+    [ "Botania:manaResource/17" ] = {
+      display_name = "Manasteel Nugget",
+    },
+    [ "MineFactoryReloaded:ceramicdye/4" ] = {
+      display_name = "Ceramic Dye (Yellow)",
+    },
+    [ "ThermalExpansion:Frame/8" ] = {
+      display_name = "Resonant Energy Cell Frame (Empty)",
+    },
+    [ "StevesCarts:ModuleComponents/45" ] = {
+      display_name = "Eye of Galgador",
+    },
+    [ "ThermalExpansion:Tesseract/0/4e4dd2b38b5a3599de9179dfa08246a6" ] = {
+      display_name = "Tesseract",
+    },
+    [ "LogisticsPipes:item.itemModule/7" ] = {
+      display_name = "Advanced Extractor module",
+    },
+    [ "AWWayofTime:bloodMagicBaseItems/15" ] = {
+      display_name = "Cracked Runic Plate",
+    },
+    [ "Thaumcraft:WandCasting/100/da7c234e3ca311fbe8ae9bec28dff21c" ] = {
+      display_name = "Ichorium Adorned Ichorcloth Strapped Silverwood Wand",
+    },
+    [ "TConstruct:Smeltery/2" ] = {
+      display_name = "Seared Bricks",
+    },
+    [ "Genetics:misc/0" ] = {
+      display_name = "Reinforced Casing",
+    },
+    [ "Botania:rune/4" ] = {
+      display_name = "Rune of Spring",
+    },
+    [ "extracells:ecbaseblock/0" ] = {
+      display_name = "ME Fluid Interface",
+    },
+    [ "extracells:part.base/2" ] = {
+      display_name = "ME Fluid Storage Bus",
+    },
+    [ "extracells:storage.component/5" ] = {
+      display_name = "4k ME Fluid Storage Component",
+    },
+    [ "StevesCarts:ModuleComponents/23" ] = {
+      display_name = "Reinforced Wheels",
+    },
+    [ "BuildCraft|Builders:blueprintItem/0" ] = {
+      display_name = "Blueprint",
+    },
+    [ "Botania:rune/7" ] = {
+      display_name = "Rune of Winter",
+    },
+    [ "minecraft:ender_eye/0" ] = {
+      display_name = "Eye of Ender",
+    },
+    [ "minecraft:redstone_lamp/0" ] = {
+      display_name = "Redstone Lamp",
+    },
+    [ "minecraft:netherbrick/0" ] = {
+      display_name = "Nether Brick",
+    },
+    [ "Thaumcraft:ItemResource/15" ] = {
+      display_name = "Primal Charm",
+    },
+    [ "BigReactors:BRTurbineRotorPart/1" ] = {
+      display_name = "Turbine Rotor Blade",
+    },
+    [ "BigReactors:BRReactorPart/7" ] = {
+      display_name = "Reactor Computer Port",
+    },
+    [ "thaumicenergistics:storage.component/2" ] = {
+      display_name = "ME 16k Essentia Storage Component",
+    },
+    [ "ThermalExpansion:Frame/3" ] = {
+      display_name = "Machine Frame (Resonant)",
+    },
+    [ "TConstruct:heartCanister/2" ] = {
+      display_name = "Red Heart Canister",
+    },
+    [ "MineFactoryReloaded:safarinet.reusable/0" ] = {
+      display_name = "Safari Net (Reusable)",
+    },
+    [ "ExtraUtilities:decorativeBlock1/9" ] = {
+      display_name = "Sandy Glass",
+    },
+    [ "minecraft:tnt/0" ] = {
+      display_name = "TNT",
+    },
+    [ "thaumicenergistics:storage.component/1" ] = {
+      display_name = "ME 4k Essentia Storage Component",
+    },
+    [ "ThermalExpansion:diagram/0" ] = {
+      display_name = "Schematic",
+    },
+    [ "SolarExpansion:solarPanelAdvanced/0" ] = {
+      display_name = "Advanced Solar Panel",
+    },
+    [ "Thaumcraft:blockCosmeticSolid/4" ] = {
+      display_name = "Thaumium Block",
+    },
+    [ "StevesCarts:ModuleComponents/21" ] = {
+      display_name = "Stabilized Metal",
+    },
+    [ "Botania:pool/2" ] = {
+      display_name = "Diluted Mana Pool",
+    },
+    [ "Botania:rune/14" ] = {
+      display_name = "Rune of Envy",
+    },
+    [ "IC2:itemToolbox/0" ] = {
+      display_name = "Tool Box",
+    },
+    [ "Thaumcraft:WandCap/6" ] = {
+      display_name = "Inert Thaumium Cap",
+    },
+    [ "DraconicEvolution:draconiumFluxCapacitor/1" ] = {
+      display_name = "Draconic Flux Capacitor",
+    },
+    [ "minecraft:beacon/0" ] = {
+      display_name = "Beacon",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/6" ] = {
+      display_name = "Redstone Comp Chipset",
+    },
+    [ "IC2:blockMachine/6" ] = {
+      display_name = "Fluid/Solid Canning Machine",
+    },
+    [ "AWWayofTime:sanctus/0" ] = {
+      display_name = "Sanctus",
+    },
+    [ "IC2:reactorCoolantSimple/1" ] = {
+      display_name = "10k Coolant Cell",
+    },
+    [ "appliedenergistics2:tile.BlockMolecularAssembler/0" ] = {
+      display_name = "Molecular Assembler",
+    },
+    [ "BuildCraft|Silicon:laserTableBlock/0" ] = {
+      display_name = "Assembly Table",
+    },
+    [ "IC2:blockMachine2/8" ] = {
+      display_name = "Replicator",
+    },
+    [ "IC2:itemTreetap/0" ] = {
+      display_name = "Treetap",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingUnit/1" ] = {
+      display_name = "Crafting Co-Processing Unit",
+    },
+    [ "Thaumcraft:WandRod/2" ] = {
+      display_name = "Silverwood Rod",
+    },
+    [ "minecraft:comparator/0" ] = {
+      display_name = "Redstone Comparator",
+    },
+    [ "IC2:itemDensePlates/5" ] = {
+      display_name = "Dense Refined Iron Plate",
+    },
+    [ "IC2:itemPartCircuit/0" ] = {
+      display_name = "Electronic Circuit",
+    },
+    [ "Botania:rune/2" ] = {
+      display_name = "Rune of Earth",
+    },
+    [ "extracells:storage.component/6" ] = {
+      display_name = "16k ME Fluid Storage Component",
+    },
+    [ "minecraft:gold_block/0" ] = {
+      display_name = "Block of Gold",
+    },
+    [ "minecraft:wooden_slab/0" ] = {
+      display_name = "Oak Wood Slab",
+    },
+    [ "EnderIO:itemMachinePart/0" ] = {
+      display_name = "Machine Chassis",
+    },
+    [ "AWWayofTime:tennebrae/0" ] = {
+      display_name = "Tenebrae",
+    },
+    [ "IC2:itemRTGPellet/0" ] = {
+      display_name = "Pellets of RTG Fuel",
+    },
+    [ "AWWayofTime:AlchemicalWizardrybloodRune/4" ] = {
+      display_name = "Rune of Superior Capacity",
+    },
+    [ "IC2:itemRecipePart/1" ] = {
+      display_name = "Electric Motor",
+    },
+    [ "BigReactors:BRMetalBlock/4" ] = {
+      display_name = "Ludicrite Block",
+    },
+    [ "ExtraUtilities:extractor_base/0" ] = {
+      display_name = "Transfer Node (Items)",
+    },
+    [ "minecraft:diamond_axe/0" ] = {
+      display_name = "Diamond Axe",
+    },
+    [ "ThaumicTinkerer:xpTalisman/0" ] = {
+      display_name = "Talisman of Withhold",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/4" ] = {
+      display_name = "Enriched Sunnarium Alloy",
+    },
+    [ "TConstruct:heartCanister/4" ] = {
+      display_name = "Yellow Heart Canister",
+    },
+    [ "IC2:blockMachine/2" ] = {
+      display_name = "Electric Furnace",
+    },
+    [ "aobd:dustUranium/0" ] = {
+      display_name = "Uranium Dust",
+    },
+    [ "CarpentersBlocks:blockCarpentersBlock/0" ] = {
+      display_name = "Carpenter's Block",
+    },
+    [ "extracells:storage.component/0" ] = {
+      display_name = "256k ME Storage Component",
+    },
+    [ "Forestry:alveary/0" ] = {
+      display_name = "Alveary",
+    },
+    [ "ThaumicTinkerer:kamiResource/5" ] = {
+      display_name = "Ichorcloth Strapped Silverwood Wand Core",
+    },
+    [ "ThermalExpansion:Frame/12" ] = {
+      display_name = "Illuminator Frame",
+    },
+    [ "ImmersiveEngineering:coil/2" ] = {
+      display_name = "HV Wire Coil",
+    },
+    [ "thaumicenergistics:knowledge.core/0" ] = {
+      display_name = "Knowledge Core",
+    },
+    [ "AWWayofTime:terrae/0" ] = {
+      display_name = "Terrae",
+    },
+    [ "witchery:ingredient/92" ] = {
+      display_name = "Quartz Sphere",
+    },
+    [ "minecraft:sandstone/0" ] = {
+      display_name = "Sandstone",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/0" ] = {
+      display_name = "Sunnarium",
+    },
+    [ "Thaumcraft:WandCap/2" ] = {
+      display_name = "Charged Thaumium Cap",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/3" ] = {
+      display_name = "Enriched Sunnarium",
+    },
+    [ "ExtraBees:alveary/1" ] = {
+      display_name = "Frame Housing",
+    },
+    [ "SolarExpansion:solarPanelLeadstone/0" ] = {
+      display_name = "Leadstone Solar Panel",
+    },
+    [ "ExtraBees:alveary/3" ] = {
+      display_name = "Alveary Lighting",
+    },
+    [ "ForbiddenMagic:BlinkFocus/0" ] = {
+      display_name = "Wand Focus: Blink",
+    },
+    [ "ExtraUtilities:etherealglass/1" ] = {
+      display_name = "Ineffable Glass",
+    },
+    [ "BigReactors:BRTurbinePart/3" ] = {
+      display_name = "Turbine Fluid Port",
+    },
+    [ "IC2:itemDust/1" ] = {
+      display_name = "Clay Dust",
+    },
+    [ "IC2:itemBatCrystal/27" ] = {
+      display_name = "Energy Crystal",
+    },
+    [ "IC2:blockGenerator/3" ] = {
+      display_name = "Solar Panel",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/13" ] = {
+      display_name = "Quantum Core",
+    },
+    [ "ExtraUtilities:nodeUpgrade/2" ] = {
+      display_name = "World Interaction Upgrade",
+    },
+    [ "ThermalExpansion:Strongbox/1" ] = {
+      display_name = "Strongbox",
+    },
+    [ "MineFactoryReloaded:pinkslime.block/0" ] = {
+      display_name = "Pink Slime Block",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingMonitor/0" ] = {
+      display_name = "Crafting Monitor",
+    },
+    [ "ThermalDynamics:retriever/4" ] = {
+      display_name = "Resonant Retriever",
+    },
+    [ "ThermalExpansion:Machine/0/d639b8a357e29baa602561ace830cacf" ] = {
+      display_name = "Redstone Furnace (Resonant)",
+    },
+    [ "ThermalExpansion:Machine/4/d639b8a357e29baa602561ace830cacf" ] = {
+      display_name = "Magma Crucible (Resonant)",
+    },
+    [ "IC2:itemPartCFPowder/0" ] = {
+      display_name = "CF Powder",
+    },
+    [ "ThermalExpansion:Machine/6/d639b8a357e29baa602561ace830cacf" ] = {
+      display_name = "Glacial Precipitator (Resonant)",
+    },
+    [ "ThermalExpansion:Machine/7/d639b8a357e29baa602561ace830cacf" ] = {
+      display_name = "Igneous Extruder (Resonant)",
+    },
+    [ "IC2:itemCellEmpty/0" ] = {
+      display_name = "Empty Cell",
+    },
+    [ "IC2:itemDensePlates/4" ] = {
+      display_name = "Dense Iron Plate",
+    },
+    [ "Botania:spark/0" ] = {
+      display_name = "Spark",
+    },
+    [ "AWWayofTime:reinforcedSlate/0" ] = {
+      display_name = "Reinforced Slate",
+    },
+    [ "IC2:itemFreq/0" ] = {
+      display_name = "Frequency Transmitter",
+    },
+    [ "ThermalDynamics:servo/4" ] = {
+      display_name = "Resonant Servo",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/24" ] = {
+      display_name = "Engineering Processor",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/44" ] = {
+      display_name = "Annihilation Core",
+    },
+    [ "ThermalFoundation:material/1027" ] = {
+      display_name = "Blitz Powder",
+    },
+    [ "IC2:itemDust2/0" ] = {
+      display_name = "Silicon dioxide",
+    },
+    [ "DraconicEvolution:draconicIngot/0" ] = {
+      display_name = "Awakened Draconium Ingot",
+    },
+    [ "EnderIO:blockCapBank/3/59b8a9d9c7ab159344e472e362b34ac2" ] = {
+      display_name = "Vibrant Capacitor Bank",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/12" ] = {
+      display_name = "MT Core",
+    },
+    [ "AWWayofTime:bloodMagicBaseItems/0" ] = {
+      display_name = "Quartz Rod",
+    },
+    [ "LogisticsPipes:item.PipeFluidBasic/0" ] = {
+      display_name = "Logistics Fluid Basic Pipe",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/8" ] = {
+      display_name = "Irradiant Reinforced Plate",
+    },
+    [ "minecraft:golden_apple/1" ] = {
+      display_name = "Golden Apple",
+    },
+    [ "aobd:blockIridium/0" ] = {
+      display_name = "Iridium Block",
+    },
+    [ "IC2:itemArmorNanoLegs/26" ] = {
+      display_name = "NanoSuit Leggings",
+    },
+    [ "appliedenergistics2:tile.BlockCraftingStorage/2" ] = {
+      display_name = "16k Crafting Storage",
+    },
+    [ "AWWayofTime:AlchemicalWizardrybloodRune/2" ] = {
+      display_name = "Rune of Dislocation",
+    },
+    [ "ThermalFoundation:material/76" ] = {
+      display_name = "Enderium Ingot",
+    },
+    [ "ThermalExpansion:augment/313" ] = {
+      display_name = "Augment: Igneous Catalyst",
+    },
+    [ "IC2:blockMachine/1" ] = {
+      display_name = "Iron Furnace",
+    },
+    [ "DraconicEvolution:wyvernCore/0" ] = {
+      display_name = "Wyvern Core",
+    },
+    [ "AWWayofTime:runeOfSacrifice/0" ] = {
+      display_name = "Rune of Sacrifice",
+    },
+    [ "AWWayofTime:largeBloodStoneBrick/0" ] = {
+      display_name = "Large Bloodstone Brick",
+    },
+    [ "IC2:reactorVentCore/1" ] = {
+      display_name = "Reactor Heat Vent",
+    },
+    [ "Thaumcraft:ItemNugget/6" ] = {
+      display_name = "Thaumium Nugget",
+    },
+    [ "Botania:lens/1" ] = {
+      display_name = "Mana Lens: Velocity",
+    },
+    [ "Botania:pylon/1" ] = {
+      display_name = "Natura Pylon",
+    },
+    [ "ThermalExpansion:Cell/4" ] = {
+      display_name = "Resonant Energy Cell",
+    },
+    [ "AWWayofTime:aether/0" ] = {
+      display_name = "Aether",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/9" ] = {
+      display_name = "Fluix Pearl",
+    },
+    [ "BuildCraft|Transport:pipeGate/0/20c3873d99b93a49ac2f39ba320e539f" ] = {
+      display_name = "Basic Gate",
+    },
+    [ "SolarExpansion:solarCoreRedstone/0" ] = {
+      display_name = "Redstone Solar Core",
+    },
+    [ "IronChest:BlockIronChest/0" ] = {
+      display_name = "Iron Chest",
+    },
+    [ "AdvancedSolarPanel:BlockMolecularTransformer/0" ] = {
+      display_name = "Molecular Transformer",
+    },
+    [ "minecraft:glass_pane/0" ] = {
+      display_name = "Glass Pane",
+    },
+    [ "thaumicenergistics:thaumicenergistics.block.arcane.assembler/0/ecda6c65b36487c17d4cb93622f0d6c9" ] = {
+      display_name = "Arcane Assembler",
+    },
+    [ "IC2:blockMachine/0" ] = {
+      display_name = "Basic Machine Casing",
+    },
+    [ "Botania:rune/15" ] = {
+      display_name = "Rune of Pride",
+    },
+    [ "BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis/0" ] = {
+      display_name = "Apiarist's Pipe",
+    },
+    [ "chisel:laboratoryblock/0" ] = {
+      display_name = "Laboratory Block",
+    },
+    [ "OpenBlocks:vacuumhopper/0" ] = {
+      display_name = "Vacuum Hopper",
+    },
+    [ "minecraft:dirt/0" ] = {
+      display_name = "Dirt",
+    },
+    [ "ThermalFoundation:Storage/12" ] = {
+      display_name = "Enderium Block",
+    },
+    [ "DraconicEvolution:flowGate/0" ] = {
+      display_name = "Flux Gate",
+    },
+    [ "SolarExpansion:solarCoreResonant/0" ] = {
+      display_name = "Resonant Solar Core",
+    },
+    [ "ThaumicTinkerer:ichorclothChest/0" ] = {
+      display_name = "Ichorcloth Robe",
+    },
+    [ "Thaumcraft:blockCosmeticSolid/6" ] = {
+      display_name = "Arcane Stone Block",
+    },
+    [ "minecraft:brewing_stand/0" ] = {
+      display_name = "Brewing Stand",
+    },
+    [ "Botania:rune/3" ] = {
+      display_name = "Rune of Air",
+    },
+    [ "extracells:storage.component/3" ] = {
+      display_name = "16384k ME Storage Component",
+    },
+    [ "StevesCarts:ModuleComponents/19" ] = {
+      display_name = "Refined Hardener",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/28" ] = {
+      display_name = "Advanced Card",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/38" ] = {
+      display_name = "64k ME Storage Component",
+    },
+    [ "AWWayofTime:bloodMagicBaseAlchemyItems/5" ] = {
+      display_name = "Fractured Bone",
+    },
+    [ "MineFactoryReloaded:cable.redstone/0" ] = {
+      display_name = "RedNet Cable",
+    },
+    [ "AWWayofTime:blockCrystalBelljar/0" ] = {
+      display_name = "Crystal Belljar",
+    },
+    [ "Botania:rune/8" ] = {
+      display_name = "Rune of Mana",
+    },
+    [ "IC2:itemPartCarbonMesh/0" ] = {
+      display_name = "Raw Carbon Mesh",
+    },
+    [ "minecraft:glowstone/0" ] = {
+      display_name = "Glowstone",
+    },
+    [ "AWWayofTime:bloodMagicBaseItems/1" ] = {
+      display_name = "Empty Core",
+    },
+    [ "ThaumicTinkerer:kamiResource/0" ] = {
+      display_name = "Ichor",
+    },
+    [ "witchery:ingredient/27" ] = {
+      display_name = "Clay Jar",
+    },
+    [ "IC2:reactorReflectorThick/1" ] = {
+      display_name = "Thick Neutron Reflector",
+    },
+    [ "EnderIO:blockIngotStorage/2" ] = {
+      display_name = "Vibrant Alloy Block",
+    },
+    [ "minecraft:lava_bucket/0" ] = {
+      display_name = "Lava Bucket",
+    },
+    [ "minecraft:clay/0" ] = {
+      display_name = "Clay",
+    },
+    [ "extracells:storage.component/4" ] = {
+      display_name = "1k ME Fluid Storage Component",
+    },
+    [ "DraconicEvolution:particleGenerator/0" ] = {
+      display_name = "Particle Generator",
+    },
+    [ "ExtraUtilities:decorativeBlock2/0" ] = {
+      display_name = "Thickened Glass",
+    },
+    [ "IC2:itemPartAlloy/0" ] = {
+      display_name = "Advanced Alloy",
+    },
+    [ "ThermalExpansion:Frame/11" ] = {
+      display_name = "Tesseract Frame (Full)",
+    },
+    [ "Botania:rune/0" ] = {
+      display_name = "Rune of Water",
+    },
+    [ "minecraft:bed/0" ] = {
+      display_name = "Bed",
+    },
+    [ "ExtraUtilities:paintbrush/0" ] = {
+      display_name = "Paintbrush",
+    },
+    [ "Genetics:labMachine/3" ] = {
+      display_name = "Genepool",
+    },
+    [ "ThermalFoundation:Storage/11" ] = {
+      display_name = "Lumium Block",
+    },
+    [ "ThaumicTinkerer:ichorclothLegs/0" ] = {
+      display_name = "Ichorcloth Leggings",
+    },
+    [ "LogisticsPipes:item.PipeFluidSupplierMk2/0" ] = {
+      display_name = "Logistics Fluid Supplier",
+    },
+    [ "AWWayofTime:magicales/0" ] = {
+      display_name = "Magicales",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/1" ] = {
+      display_name = "Sunnarium Alloy",
+    },
+    [ "IC2:itemCable/9" ] = {
+      display_name = "Glass Fibre Cable",
+    },
+    [ "SolarExpansion:solarCoreAdvanced/0" ] = {
+      display_name = "Advanced Solar Core",
+    },
+    [ "DraconicEvolution:teleporterMKI/0" ] = {
+      display_name = "Charm of Dislocation",
+    },
+    [ "IC2:blockFenceIron/0" ] = {
+      display_name = "Iron Fence",
+    },
+    [ "BuildCraft|Factory:pumpBlock/0" ] = {
+      display_name = "Pump",
+    },
+    [ "EnderTech:endertech.multiblockGlass/0" ] = {
+      display_name = "Ender Tank Glass",
+    },
+    [ "StevesAddons:cable_ae/0" ] = {
+      display_name = "Energistics Connector",
+    },
+    [ "IC2:itemArmorRubBoots/0" ] = {
+      display_name = "Rubber Boots",
+    },
+    [ "ThermalExpansion:augment/314" ] = {
+      display_name = "Augment: Pyroclastic Generation",
+    },
+    [ "Botania:rune/12" ] = {
+      display_name = "Rune of Sloth",
+    },
+    [ "IC2:itemCable/10" ] = {
+      display_name = "Tin Cable",
+    },
+    [ "appliedenergistics2:tile.BlockController/0" ] = {
+      display_name = "ME Controller",
+    },
+    [ "extracells:storage.physical/1" ] = {
+      display_name = "ME 1024k Storage",
+    },
+    [ "ThermalDynamics:ThermalDynamics_32/4" ] = {
+      display_name = "Warp Itemduct",
+    },
+    [ "ThaumicTinkerer:ichorclothHelm/0" ] = {
+      display_name = "Ichorcloth Cowl",
+    },
+    [ "IC2:blockReactorChamber/0" ] = {
+      display_name = "Reactor Chamber",
+    },
+    [ "minecraft:stick/0" ] = {
+      display_name = "Stick",
+    },
+    [ "minecraft:milk_bucket/0" ] = {
+      display_name = "Milk Bucket",
+    },
+    [ "Railcraft:nugget/1" ] = {
+      display_name = "Steel Nugget",
+    },
+    [ "AWWayofTime:lavaCrystal/0" ] = {
+      display_name = "Lava Crystal",
+    },
+    [ "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond/0" ] = {
+      display_name = "Diamond Transport Pipe",
+    },
+    [ "EnderTech:endertech.enderTankPart/0" ] = {
+      display_name = "Ender Tank Frame",
+    },
+    [ "chisel:tyrian/0" ] = {
+      display_name = "Tyrian",
+    },
+    [ "Forestry:sturdyMachine/0" ] = {
+      display_name = "Sturdy Casing",
+    },
+    [ "ExtraBees:alveary/6" ] = {
+      display_name = "Alveary Transmission",
+    },
+    [ "MineFactoryReloaded:machine.2/5" ] = {
+      display_name = "Auto-Brewer",
+    },
+    [ "AgriCraft:cropsItem/0" ] = {
+      display_name = "Crop Sticks",
+    },
+    [ "BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone/0" ] = {
+      display_name = "Cobblestone Transport Pipe",
+    },
+    [ "ThermalExpansion:augment/129" ] = {
+      display_name = "Augment: Overclocked Modular Gearbox",
+    },
+    [ "IC2:reactorHeatSwitch/1" ] = {
+      display_name = "Heat Exchanger",
+    },
+    [ "gendustry:Imprinter/0" ] = {
+      display_name = "Genetic Imprinter",
+    },
+    [ "rftools:endergenicBlock/0" ] = {
+      display_name = "Endergenic Generator",
+    },
+    [ "MineFactoryReloaded:pinkslime/1" ] = {
+      display_name = "Pink Slime Crystal",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/53" ] = {
+      display_name = "ME Smart Cable - Green",
+    },
+    [ "appliedenergistics2:item.ItemMultiPart/73" ] = {
+      display_name = "ME Dense Cable - Green",
+    },
+    [ "IC2:itemArmorQuantumLegs/26" ] = {
+      display_name = "QuantumSuit Leggings",
+    },
+    [ "LogisticsPipes:item.itemModule/107" ] = {
+      display_name = "Advanced Extractor MK2",
+    },
+    [ "AWWayofTime:Altar/0" ] = {
+      display_name = "Blood Altar",
+    },
+    [ "AWWayofTime:bloodMagicBaseAlchemyItems/3" ] = {
+      display_name = "Strengthened Catalyst",
+    },
+    [ "minecraft:diamond_block/0" ] = {
+      display_name = "Block of Diamond",
+    },
+    [ "rftools:dimensionBuilderBlock/0" ] = {
+      display_name = "Dimension Builder",
+    },
+    [ "EnderIO:itemAlloy/0" ] = {
+      display_name = "Electrical Steel",
+    },
+    [ "minecraft:shears/0" ] = {
+      display_name = "Shears",
+    },
+    [ "LogisticsPipes:item.PipeItemsBasicLogistics/0" ] = {
+      display_name = "Basic Logistics Pipe",
+    },
+    [ "ThermalDynamics:ThermalDynamics_0/2" ] = {
+      display_name = "Redstone Energy Fluxduct",
+    },
+    [ "CarpentersBlocks:blockCarpentersSlope/0" ] = {
+      display_name = "Carpenter's Wedge Slope",
+    },
+    [ "BuildCraft|Transport:pipeWaterproof/0" ] = {
+      display_name = "Pipe Sealant",
+    },
+    [ "ExtraUtilities:cobblestone_compressed/0" ] = {
+      display_name = "Compressed Cobblestone",
+    },
+    [ "ThermalDynamics:ThermalDynamics_0/4" ] = {
+      display_name = "Resonant Fluxduct",
+    },
+    [ "Botania:rune/13" ] = {
+      display_name = "Rune of Wrath",
+    },
+    [ "MineFactoryReloaded:stainedglass.pane/4" ] = {
+      display_name = "Stained Glass Pane (Yellow)",
+    },
+    [ "chisel:concrete/0" ] = {
+      display_name = "Concrete",
+    },
+    [ "IC2:itemPartIridium/0" ] = {
+      display_name = "Iridium Reinforced Plate",
+    },
+    [ "appliedenergistics2:tile.BlockWireless/0" ] = {
+      display_name = "ME Wireless Access Point",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/36" ] = {
+      display_name = "4k ME Storage Component",
+    },
+    [ "Avaritia:Resource/0" ] = {
+      display_name = "Diamond Lattice",
+    },
+    [ "ThermalExpansion:Machine/1/25087314de12a37b732c7b62e28b58b1" ] = {
+      display_name = "Pulverizer (Basic)",
+    },
+    [ "BigReactors:BRTurbinePart/4" ] = {
+      display_name = "Turbine Rotor Bearing",
+    },
+    [ "gendustry:UpgradeFrame/0" ] = {
+      display_name = "Upgrade Frame",
+    },
+    [ "ExtraUtilities:decorativeBlock1/2" ] = {
+      display_name = "Burnt Quartz",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/12" ] = {
+      display_name = "Pure Fluix Crystal",
+    },
+    [ "LogisticsPipes:item.itemModule/502" ] = {
+      display_name = "Active Supplier Module",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/22" ] = {
+      display_name = "Logic Processor",
+    },
+    [ "appliedenergistics2:item.ItemMultiMaterial/52" ] = {
+      display_name = "Blank Pattern",
+    },
+    [ "ThermalFoundation:material/20" ] = {
+      display_name = "Cinnabar",
+    },
+    [ "AdvancedSolarPanel:asp_crafting_items/7" ] = {
+      display_name = "Reinforced Iridium-Iron Plate",
+    },
+    [ "gendustry:ApiaryUpgrade/0" ] = {
+      display_name = "Production Upgrade",
+    },
+    [ "ExtraUtilities:nodeUpgrade/0" ] = {
+      display_name = "Speed Upgrade",
+    },
+    [ "ThermalFoundation:material/104" ] = {
+      display_name = "Invar Nugget",
+    },
+    [ "IC2:itemCable/1" ] = {
+      display_name = "Copper Cable",
+    },
+    [ "EnderIO:itemAlloy/1" ] = {
+      display_name = "Energetic Alloy",
+    },
+    [ "ThermalFoundation:material/74" ] = {
+      display_name = "Signalum Ingot",
+    },
+    [ "ForbiddenMagic:StarBlock/0" ] = {
+      display_name = "Nether Star Block",
+    },
+    [ "extracells:storage.physical/3" ] = {
+      display_name = "ME 16384k Storage",
+    },
+    [ "AWWayofTime:bloodMagicBaseAlchemyItems/8" ] = {
+      display_name = "Potentia",
+    },
+    [ "ThermalExpansion:Strongbox/3" ] = {
+      display_name = "Reinforced Strongbox",
+    },
+    [ "OpenBlocks:blockbreaker/0" ] = {
+      display_name = "Block Breaker",
+    },
+    [ "rftools:machineBase/0" ] = {
+      display_name = "Machine Base",
+    },
+    [ "Botania:rune/5" ] = {
+      display_name = "Rune of Summer",
+    },
+    [ "IC2:itemcrystalmemory/0" ] = {
+      display_name = "Crystal Memory",
+    },
+    [ "ThermalExpansion:Frame/0" ] = {
+      display_name = "Machine Frame (Basic)",
+    },
+    [ "minecraft:dye/5" ] = {
+      display_name = "Purple Dye",
+    },
+    [ "ThermalExpansion:capacitor/4" ] = {
+      display_name = "Redstone Flux Capacitor",
+    },
+    [ "BuildCraft|Silicon:redstoneChipset/3" ] = {
+      display_name = "Diamond Chipset",
+    },
+    [ "EnderIO:itemBasicCapacitor/1" ] = {
+      display_name = "Double-Layer Capacitor",
+    },
+  },
+}
