@@ -53,6 +53,7 @@ end
 
 function getStockedItems()
   local items = {}
+  itemSearcher.refreshItems()
   for key, stockedItem in pairs(settingsPersistence.getStockedItems()) do
     local itemName = stockedItem.id
     local itemDetail = itemSearcher.getItemDetail(stockedItem.item)
@@ -60,9 +61,15 @@ function getStockedItems()
     if itemDetail ~= nil then
       itemName = itemDetail.display_name
     end
+    local craftableItem = itemSearcher.findCraftableItem(stockedItem.item)
+    local amountInSystem = 0
+
+    if craftableItem ~= nil then
+      amountInSystem = craftableItem.size
+    end
 
     table.insert(items, {
-      itemDetailStr = string.format("%s (%d)", itemName, stockedItem.threshold),
+      itemDetailStr = string.format("%s (%d / %d)", itemName, amountInSystem, stockedItem.threshold),
       stockedItem = stockedItem
     })
   end
