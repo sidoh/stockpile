@@ -22,7 +22,7 @@ function promptForNumberInRange(min, max)
     if tValue < min  then
       print("ERROR: please enter a number >= " .. min)
     elseif tValue > max then
-      print("ERROR: please neter a number <= " .. max)
+      print("ERROR: please enter a number <= " .. max)
     else
       value = tValue
     end
