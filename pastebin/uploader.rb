@@ -12,6 +12,13 @@ api_key = File.read(api_key_file)
 Pastebin.send(:remove_const, :DEVKEY)
 Pastebin.const_set(:DEVKEY, api_key)
 
+def pastebin_upload(f)
+  Pastebin.new(
+    api_paste_code: f,
+    api_user_key: 'sidoh'
+  ).paste
+end
+
 files = %w(
   userIo
   tablePersistence
@@ -24,7 +31,7 @@ pastebin_keys = {}
 
 files.each do |file|
   file_contents = File.read("#{DIR}/../#{file}")
-  pastebin_keys[file] = Pastebin.new(api_paste_code: file_contents).paste.split('/').last
+  pastebin_keys[file] = pastebin_upload(file_contents).split('/').last
 end
 
 installer_code = <<-CODE
@@ -41,4 +48,4 @@ sleep(1)
 shell.run("startup")
 CODE
 
-puts Pastebin.new(api_paste_code: installer_code).paste
+puts pastebin_upload(installer_code)
