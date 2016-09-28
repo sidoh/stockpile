@@ -40,7 +40,7 @@ installer_code = <<-CODE
 CODE
 
 pastebin_keys.each do |key, file|
-  installer_code << "shell.run('pastebin', 'get', '#{key}', '#{file}')\n"
+  installer_code << "shell.run('pastebin', 'get', '#{file}', '#{key}')\n"
 end
 
 installer_code << <<-CODE
