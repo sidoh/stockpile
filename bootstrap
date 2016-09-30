@@ -2,15 +2,15 @@ files = {
   "startup",
   "tablePersistence",
   "userIo",
-  "stockpile/craftingRequester",
-  "stockpile/itemSearcher",
-  "stockpile/settingsPersistence"
+  "stockpile"
 }
 
-fs.mkdir("/stockpile")
-
 for _, file in ipairs(files) do
-  fs.move("/downloads/stockpile/" .. file, "/" .. file)
+  local from = "/downloads/stockpile/" .. file
+  local to = "/" .. file
+  print(from .. "-->" .. to)
+
+  fs.move(from, to)
 end
 
 fs.delete("/downloads")
