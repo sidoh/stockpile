@@ -1,0 +1,15 @@
+files = {
+  "startup",
+  "tablePersistence",
+  "userIo",
+  "stockpile/craftingRequester",
+  "stockpile/itemSearcher",
+  "stockpile/settingsPersistence"
+}
+
+for _, file in ipairs(files) do
+  fs.move("/stockpile/" .. file, "/" .. file)
+end
+
+fs.delete("/stockpile")
+shell.run("startup")

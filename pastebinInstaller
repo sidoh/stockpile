@@ -1,0 +1,3 @@
+shell.run("pastebin get wPtGKMam github")
+shell.run("github sidoh stockpile /")
+shell.run("/stockpile/bootstrap")
