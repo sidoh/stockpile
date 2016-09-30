@@ -10,6 +10,9 @@ for _, file in ipairs(files) do
   local to = "/" .. file
   print(from .. "-->" .. to)
 
+  if fs.exists(to) then
+    fs.delete(to)
+  end
   fs.move(from, to)
 end
 
