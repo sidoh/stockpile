@@ -7,9 +7,11 @@ files = {
   "stockpile/settingsPersistence"
 }
 
+fs.mkdir("/stockpile")
+
 for _, file in ipairs(files) do
-  fs.move("/stockpile/" .. file, "/" .. file)
+  fs.move("/downloads/stockpile/" .. file, "/" .. file)
 end
 
-fs.delete("/stockpile")
+fs.delete("/downloads")
 shell.run("startup")
