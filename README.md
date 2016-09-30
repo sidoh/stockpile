@@ -5,5 +5,5 @@ ComputerCraft program to auto-stock craftable items in an AppliedEnergistics net
 Install by running:
 
 ```
-pastebin run XCUXeQL7
+pastebin run KghxhDha
 ```
