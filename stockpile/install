@@ -1,4 +1,3 @@
-local newVersion = false
 local VERSION_FILE = "/stockpile/version"
 
 function parseVersion(v)
@@ -11,6 +10,7 @@ end
 
 function isNewerVersion(v1, v2)
   for i = 1, #v1 do
+    print(v1[i] .. " // " .. v2[i])
     if v1[i] > v2[i] then
       return true
     elseif v1[i] < v2[i] then
@@ -20,11 +20,7 @@ function isNewerVersion(v1, v2)
   return false
 end
 
-function runUpdate()
-  shell.run("pastebin get wPtGKMam github")
-  shell.run("github sidoh stockpile /downloads")
-  shell.run("/downloads/stockpile/bootstrap")
-end
+local runInstall = false
 
 if fs.exists(VERSION_FILE) then
   local handle = fs.open(VERSION_FILE, "r")
@@ -38,27 +34,31 @@ if fs.exists(VERSION_FILE) then
   handle.close()
   local remoteVersion = parseVersion(rawRemoteVersion)
   
-  newVersion = isNewerVersion(remoteVersion, currentVersion)
-else
-  newVersion = true
-end
-
-if not newVersion then
-  print("Already at newest version! Continue update anyway?")
-  print("(y)es / (n)o")
-  io.write("> ")
-  
-  while true do
-    local sEvent, key = os.pullEvent("key")
-  
-    if key == keys.y then
-      runUpdate()
-      break
-    elseif key == keys.n then
-      print("Aborting.")
-      break
+  if not isNewerVersion(remoteVersion, currentVersion) then
+    print("Already at newest version (" .. rawVersion .. ")! Continue update anyway?")
+    print("(y)es / (n)o")
+    io.write("> ")
+    
+    while true do
+      local sEvent, key = os.pullEvent("key")
+    
+      if key == keys.y then
+        runInstall = true
+        break
+      elseif key == keys.n then
+        print("Aborting.")
+        break
+      end
     end
+  else
+    runInstall = true
   end
 else
-  runUpdate()
+  runInstall = true
+end
+
+if runInstall then
+  shell.run("pastebin get wPtGKMam github")
+  shell.run("github sidoh stockpile /downloads")
+  shell.run("/downloads/stockpile/bootstrap")
 end
