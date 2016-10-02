@@ -3,6 +3,11 @@ os.loadAPI("stockpile/craftingRequester")
 os.loadAPI("stockpile/itemSearcher")
 os.loadAPI("userIo")
 
+function handleUpdate()
+  print("Updating...")
+  shell.run("/stockpile/install")
+end
+
 function handleSetThreshold()
   itemSearcher.refreshItems()
   local item = itemSearcher.chooseCraftableItem()
@@ -94,7 +99,7 @@ function main()
     },
     { 
       name = "Update stockpile",
-      hander = function() shell.run("stockpile/install") end
+      hander = handleUpdate
     }
   }
 

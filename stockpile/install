@@ -2,14 +2,18 @@ local newVersion = false
 local VERSION_FILE = "/stockpile/version"
 
 function parseVersion(v)
-  string.gmatch(v, "%d+")
+  local version = {}
+  for i in string.gmatch(v, "%d+") do
+    table.insert(version, i)
+  end
+  return version
 end
 
 function isNewerVersion(v1, v2)
   for i = 1, #v1 do
-    if v1 > v2
+    if v1[i] > v2[i] then
       return true
-    elseif v1 < v2
+    elseif v1[i] < v2[i] then
       return false
     end
   end
@@ -30,8 +34,9 @@ if fs.exists(VERSION_FILE) then
   local currentVersion = parseVersion(rawVersion)
 
   handle = http.get("https://raw.githubusercontent.com/sidoh/stockpile/master" .. VERSION_FILE)
-  local remoteVersion = parseVersion(handle.readAll())
+  local rawRemoteVersion = handle.readAll()
   handle.close()
+  local remoteVersion = parseVersion(rawRemoteVersion)
   
   newVersion = isNewerVersion(remoteVersion, currentVersion)
 else
@@ -39,15 +44,20 @@ else
 end
 
 if not newVersion then
-  print("There isn't a newer version available! Continue to update anyway?")
+  print("Already at newest version! Continue update anyway?")
   print("(y)es / (n)o")
   io.write("> ")
-  local sEvent, key = os.pullEvent("key")
   
-  if key == keys.y then
-    runUpdate()
-  elseif key == keys.n
-    print("Aborting.")
+  while true do
+    local sEvent, key = os.pullEvent("key")
+  
+    if key == keys.y then
+      runUpdate()
+      break
+    elseif key == keys.n then
+      print("Aborting.")
+      break
+    end
   end
 else
   runUpdate()
