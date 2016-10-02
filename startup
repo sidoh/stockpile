@@ -99,7 +99,7 @@ function main()
     },
     { 
       name = "Update stockpile",
-      hander = handleUpdate
+      handler = handleUpdate
     }
   }
 
