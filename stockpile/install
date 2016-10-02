@@ -1,0 +1,54 @@
+local newVersion = false
+local VERSION_FILE = "/stockpile/version"
+
+function parseVersion(v)
+  string.gmatch(v, "%d+")
+end
+
+function isNewerVersion(v1, v2)
+  for i = 1, #v1 do
+    if v1 > v2
+      return true
+    elseif v1 < v2
+      return false
+    end
+  end
+  return false
+end
+
+function runUpdate()
+  shell.run("pastebin get wPtGKMam github")
+  shell.run("github sidoh stockpile /downloads")
+  shell.run("/downloads/stockpile/bootstrap")
+end
+
+if fs.exists(VERSION_FILE) then
+  local handle = fs.open(VERSION_FILE, "r")
+  local rawVersion = handle.readAll()
+  handle.close()
+  
+  local currentVersion = parseVersion(rawVersion)
+
+  handle = http.get("https://raw.githubusercontent.com/sidoh/stockpile/master" .. VERSION_FILE)
+  local remoteVersion = parseVersion(handle.readAll())
+  handle.close()
+  
+  newVersion = isNewerVersion(remoteVersion, currentVersion)
+else
+  newVersion = true
+end
+
+if not newVersion then
+  print("There isn't a newer version available! Continue to update anyway?")
+  print("(y)es / (n)o")
+  io.write("> ")
+  local sEvent, key = os.pullEvent("key")
+  
+  if key == keys.y then
+    runUpdate()
+  elseif key == keys.n
+    print("Aborting.")
+  end
+else
+  runUpdate()
+end

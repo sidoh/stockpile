@@ -2,7 +2,10 @@ files = {
   "startup",
   "tablePersistence",
   "userIo",
-  "stockpile"
+  "stockpile/craftingRequester",
+  "stockpile/itemSearcher",
+  "stockpile/settingsPersistence",
+  "stockpile/install"
 }
 
 for _, file in ipairs(files) do

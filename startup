@@ -91,6 +91,10 @@ function main()
     {
       name = "View stocked items",
       handler = function() viewStockedItems("") end
+    },
+    { 
+      name = "Update stockpile",
+      hander = function() shell.run("stockpile/install") end
     }
   }
 
