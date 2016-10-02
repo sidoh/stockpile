@@ -5,7 +5,8 @@ files = {
   "stockpile/craftingRequester",
   "stockpile/itemSearcher",
   "stockpile/settingsPersistence",
-  "stockpile/install"
+  "stockpile/install",
+  "stockpile/version"
 }
 
 for _, file in ipairs(files) do
