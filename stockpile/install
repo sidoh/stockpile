@@ -10,7 +10,6 @@ end
 
 function isNewerVersion(v1, v2)
   for i = 1, #v1 do
-    print(v1[i] .. " // " .. v2[i])
     if v1[i] > v2[i] then
       return true
     elseif v1[i] < v2[i] then
