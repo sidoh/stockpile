@@ -28,4 +28,4 @@ When it's running, it should look something like this:
 
 ## Thanks
 
-Screenshots courtesy @Letouane
+Screenshots courtesy [@Letouane](https://github.com/Letouane)
