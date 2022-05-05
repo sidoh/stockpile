@@ -7,6 +7,12 @@ local CACHE_FILE = "stockpile/item_cache.json"
 local allItems = {}
 local cache = {}
 local aeInterface = peripheral.wrap("back")
+mod = nil
+if aeInterface.getAvailableItems then
+  mod = "openperipherals"
+elseif aeInterface.listAvailableItems then
+  mod = "plethora"
+end
 
 function saveCache()
   tablePersistence.save(CACHE_FILE, cache)
@@ -22,27 +28,51 @@ function loadCache()
   cache = loaded
 end
 
-function getItemDetail(item)
-  local itemKey = settingsPersistence.itemKey(item)
-
+--stores the detailed name in the cache, when not cached already. returns the cache entry.
+-- witem is a wrapped item.
+function getItemDetail(witem)
+  local itemKey = settingsPersistence.itemKey(witem)
   if cache.itemDetail[itemKey] == nil then
-    local itemDetail = aeInterface.getItemDetail(item).all()
-    cache.itemDetail[itemKey] = { display_name = itemDetail.display_name }
+    local details = nil
+    local itemDetail = { display_name = nil }
+    if mod == "plethora" then
+      details = aeInterface.findItem(witem.fingerprint).getMetadata()
+      itemDetail.display_name = details.displayName
+    elseif mod == "openperipherals" then
+      details = aeInterface.getItemDetail(witem.fingerprint).all()
+      itemDetail.display_name = details.display_name
+    end
+    cache.itemDetail[itemKey] = itemDetail
   end
-
   return cache.itemDetail[itemKey]
 end
 
-function refreshItems()
-  allItems = aeInterface.getAvailableItems()
-  loadCache()
+--clean interface to support multiple peripheral mods.
+-- item is the mods item representation from the availableItems list.
+function wrapItem(item)
+  if mod == "plethora" then
+    return {name = item.name, damage = item.damage, nbtHash = item.nbtHash, isCraftable = item.isCraftable, count = item.count, fingerprint = { name = item.name, damage = item.damage, nbtHash = item.nbtHash} }
+  elseif mod == "openperipherals" then
+    return {name = item.id, damage = item.fingerprint.dmg, nbtHash = item.fingerprint.nbt_hash, isCraftable = item.is_craftable, count = item.size, fingerprint = item.fingerprint }
+  else
+    return nil
+  end
+end
 
+function refreshItems()
+  if mod == "plethora" then
+    allItems = aeInterface.listAvailableItems()
+  elseif mod == "openperipherals" then
+    allItems = aeInterface.getAvailableItems()
+  end
+  --print("Got " .. #allItems .. " items.")
+  loadCache()
   for i, item in ipairs(allItems) do
-    if item.is_craftable and item.itemDetails == nil then
-      item.itemDetails = pcall(function() getItemDetail(item.fingerprint) end)
+    local witem = wrapItem(item)
+    if witem and witem.isCraftable and item.itemDetails == nil then
+      item.itemDetails = pcall(function() getItemDetail(witem) end)
     end
   end
-
   saveCache()
 end
 
@@ -59,14 +89,15 @@ function stringMatches(s1,s2)
 end
 
 function isSameItem(i1, i2)
-  return i1.id == i2.id and i1.dmg == i2.dmg
+  return i1.name == i2.name and i1.damage == i2.damage
 end
 
+--search availableItems by ?
 function findCraftableItem(itemToFind)
   for i, item in ipairs(allItems) do
-    item = allItems[i]      
-    if item.is_craftable and isSameItem(item.fingerprint, itemToFind) then
-      return item
+    local witem = wrapItem(allItems[i])
+    if witem.isCraftable and isSameItem(witem, itemToFind) then
+      return witem
     end
   end
 
@@ -75,13 +106,12 @@ end
 
 function findCraftableItemByName(itemName)
   matchingItems = {}
-  
   for i, item in ipairs(allItems) do
-    local item = allItems[i]      
-    local itemDetail = cache.itemDetail[settingsPersistence.itemKey(item.fingerprint)]
-
-    if item.is_craftable and itemDetail ~= nil and stringMatches(itemDetail.display_name, itemName) then
-      table.insert(matchingItems, item)
+    local witem = wrapItem(allItems[i])
+    local itemDetail = getItemDetail(witem)
+    --print(itemDetail.display_name)
+    if witem.isCraftable and itemDetail ~= nil and stringMatches(itemDetail.display_name, itemName) then
+      table.insert(matchingItems, witem)
     end
   end
   
@@ -96,10 +126,9 @@ function chooseCraftableItem()
 
   if table.getn(results) > 0 then
     local options = {}
-    for i, item in ipairs(results) do
-      local itemDetail = getItemDetail(item.fingerprint)
-      local itemName = item.id
-
+    for i, witem in ipairs(results) do
+      local itemDetail = getItemDetail(witem)
+      local itemName = witem.name
       if itemDetail ~= nil then
         itemName = itemDetail.display_name
       end
@@ -113,7 +142,7 @@ function chooseCraftableItem()
     local i = userIo.promptForNumberInRange(0, table.getn(results))
     
     if i > 0 then
-      return results[i].fingerprint
+      return results[i]
     else
       return nil
     end
