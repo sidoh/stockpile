@@ -24,16 +24,16 @@ end
   return settings.stockedItems
 end
 
-function removeStockedItem(item)
-  settings.stockedItems[itemKey(item)] = nil
+function removeStockedItem(witem)
+  settings.stockedItems[itemKey(witem)] = nil
   save()
 end
 
-function setItemThreshold(item, threshold)
-  local currentSettings = itemSettings(item)
+function setItemThreshold(witem, threshold)
+  local currentSettings = itemSettings(witem)
   if currentSettings == nil then
-    settings.stockedItems[itemKey(item)] = { 
-      item = item,
+    settings.stockedItems[itemKey(witem)] = { 
+      witem = witem,
       threshold = threshold 
     }
   else
@@ -43,36 +43,38 @@ function setItemThreshold(item, threshold)
   save()
 end
 
-function getItemThreshold(item)
-  local item = itemSettings(item)
+function getItemThreshold(witem)
+  local isettings = itemSettings(witem)
 
-  if item ~= nil then
-    return item.threshold
+  if isettings ~= nil then
+    return isettings.threshold
   else
     return nil
   end
 end
 
-function itemIsStocked(item)
-  return itemSettings(item) ~= nil
+function itemIsStocked(witem)
+  return itemSettings(witem) ~= nil
 end
 
-function itemSettings(item)
-  return getSettings().stockedItems[itemKey(item)]
+function itemSettings(witem)
+  return getSettings().stockedItems[itemKey(witem)]
 end
 
+--unused
 function itemFromKey(key)
   local parts = split(key, "/")
-  return { id = parts[1], dmg = parts[2] }
+  if #parts == 3 then
+    return { name = parts[1], damage = parts[2], nbtHash = parts[3] }
+  end
+  return { name = parts[1], damage = parts[2] }
 end
 
-function itemKey(item)
-  local key = item.id .. "/" .. item.dmg
-
-  if item.nbt_hash ~= nil then
-    key = key .. "/" .. item.nbt_hash
+function itemKey(witem)
+  local key = witem.name .. "/" .. witem.damage
+  if witem.nbtHash ~= nil then
+    key = key .. "/" .. witem.nbtHash
   end
-
   return key
 end
 

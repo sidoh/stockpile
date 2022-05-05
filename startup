@@ -3,6 +3,14 @@ os.loadAPI("stockpile/craftingRequester")
 os.loadAPI("stockpile/itemSearcher")
 os.loadAPI("userIo")
 
+local aeInterface = peripheral.wrap("back")
+mod = nil
+if aeInterface.getAvailableItems then
+  mod = "openperipherals"
+elseif aeInterface.listAvailableItems then
+  mod = "plethora"
+end
+
 function handleUpdate()
   print("Updating...")
   shell.run("/stockpile/install")
@@ -10,10 +18,10 @@ end
 
 function handleSetThreshold()
   itemSearcher.refreshItems()
-  local item = itemSearcher.chooseCraftableItem()
+  local witem = itemSearcher.chooseCraftableItem()
 
-  if item ~= nil then
-    local currentThreshold = settingsPersistence.getItemThreshold(item)
+  if witem ~= nil then
+    local currentThreshold = settingsPersistence.getItemThreshold(witem)
 
     print("Enter the number of items to keep stocked")
     if currentThreshold ~= nil then
@@ -21,7 +29,7 @@ function handleSetThreshold()
     end
     local threshold = userIo.promptForNumberInRange(1, math.huge)
 
-    settingsPersistence.setItemThreshold(item, threshold)
+    settingsPersistence.setItemThreshold(witem, threshold)
 
     print("Successfully set threshold.")
   else
@@ -40,7 +48,7 @@ function handleRemoveItem()
   if itemNum == 0 then
     print("Skipping removal.")
   elseif itemNum ~= nil then
-    settingsPersistence.removeStockedItem(stockedItems[itemNum].stockedItem.item)
+    settingsPersistence.removeStockedItem(stockedItems[itemNum].stockedItem.witem)
     print("Successfully removed stocked item.")
   else
     print("Couldn't find a matching item.")
@@ -60,17 +68,17 @@ function getStockedItems()
   local items = {}
   itemSearcher.refreshItems()
   for key, stockedItem in pairs(settingsPersistence.getStockedItems()) do
-    local itemName = stockedItem.id
-    local itemDetail = itemSearcher.getItemDetail(stockedItem.item)
+    local itemName = stockedItem.witem.name
+    local itemDetail = itemSearcher.getItemDetail(stockedItem.witem)
 
     if itemDetail ~= nil then
       itemName = itemDetail.display_name
     end
-    local craftableItem = itemSearcher.findCraftableItem(stockedItem.item)
+    local craftableItem = itemSearcher.findCraftableItem(stockedItem.witem)
     local amountInSystem = 0
 
     if craftableItem ~= nil then
-      amountInSystem = craftableItem.size
+      amountInSystem = craftableItem.count
     end
 
     table.insert(items, {

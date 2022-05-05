@@ -36,6 +36,7 @@ function printOptions(options, banner)
   local N = table.getn(options)
   local maxPage = math.ceil(N / MAX_OPTIONS)
   local viewing = true
+  banner = banner or ""
 
   while viewing do
     print(banner)

@@ -4,15 +4,28 @@ os.loadAPI("stockpile/itemSearcher")
 local aeInterface = peripheral.wrap("back")
 local STOCK_PERCENTAGE = 0.05
 local activeCraftingJobs = {}
+mod = nil
+if aeInterface.getAvailableItems then
+  mod = "openperipherals"
+elseif aeInterface.listAvailableItems then
+  mod = "plethora"
+end
 
-function requestCrafting(item, number)
-  aeInterface.requestCrafting(item, number)
+function requestCrafting(fingerprint, number)
+  if mod == "plethora" then
+    local i = aeInterface.findItem(fingerprint)
+    if i then
+      return i.craft(number)
+    end
+  elseif mod == "openperipherals" then
+    aeInterface.requestCrafting(fingerprint, number)
+    return true
+  end
 end
 
 function numItemsToStock(stockedItem, craftableItem)
-  local numStocked = craftableItem.size
+  local numStocked = craftableItem.count
   local numWanted = stockedItem.threshold
-
   if numStocked >= numWanted then
     return 0
   else
@@ -29,16 +42,13 @@ function monitorStockedItems()
     itemSearcher.refreshItems()
 
     for key, stockedItem in pairs(stockedItems) do
-      local craftableItem = itemSearcher.findCraftableItem(stockedItem.item)
-
+      local craftableItem = itemSearcher.findCraftableItem(stockedItem.witem)
       if craftableItem ~= nil then
         local stockCount = numItemsToStock(stockedItem, craftableItem) 
 
         if stockCount > 0 and activeCraftingJobs[key] == nil then
           log("Requesting " .. stockCount .. " " .. key)
-
-          activeCraftingJobs[key] = true
-          aeInterface.requestCrafting(stockedItem.item, stockCount)
+          activeCraftingJobs[key] = requestCrafting(stockedItem.witem.fingerprint, stockCount)
         end
       else
         log("ERROR: monitored item couldn't be found: " .. key)
@@ -51,11 +61,26 @@ end
 
 function monitorFinishedCraftingJobs()
   while true do 
-    local e, craftedItem, eventType = os.pullEvent("crafting_state")
-    local itemKey = settingsPersistence.itemKey(craftedItem.fingerprint)
-
-    log("Crafting job for " .. itemKey .. " finished")
-    activeCraftingJobs[itemKey] = nil
+    if mod == "plethora" then
+      local e, craftId, status = os.pullEvent("crafting_status")
+      if craftId then
+        for key, job in pairs(activeCraftingJobs) do
+          if job and job.getId() == craftId then
+            if status == "finished" or status == "missing" then
+              log("Crafting job for " .. key .. " finished")
+              activeCraftingJobs[key] = nil
+              break
+            end
+          end
+        end
+      end
+    elseif mod == "openperipherals" then
+      local e, craftedItem, eventType = os.pullEvent("crafting_state")
+      local itemKey = settingsPersistence.itemKey(itemSearcher.wrapItem(craftedItem))
+      log("Crafting job for " .. itemKey .. " finished")
+      activeCraftingJobs[itemKey] = nil
+    end
+    sleep(1)
   end
 end
 
